@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 
-import Social from './components/social'
+import Header from './containers/header'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Social />
+        <Header />
       </div>
     );
   }
