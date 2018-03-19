@@ -12,8 +12,13 @@ export const SocialName = styled.a`
   color: #9da0a4;
   text-decoration: none;
   transition: .2s;
+  padding-bottom: 2px;
   &:hover {
     color: #000;
+  }
+  &::selection {
+    background: black;
+    color: white;
   }
 `
 export const Icon = styled.i`

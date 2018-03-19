@@ -18,4 +18,8 @@ export const LogoName = styled.a`
   &:hover {
     cursor: pointer;
   }
+  &::selection {
+    background: black;
+    color: white;
+  }
 `
