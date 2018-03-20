@@ -9,9 +9,9 @@ export const Banner = styled.div`
   align-items: center;
   @media(max-width: 769px) {
     display: ${ props => props.hide === false ? 'none' : 'flex'};
-    background: red;
     flex-direction: column;
     width: 100%;
+    border-bottom: 1px solid #ccc;
   }
 `
 export const SocialName = styled.a`
@@ -25,6 +25,13 @@ export const SocialName = styled.a`
   &::selection {
     background: black;
     color: white;
+  }
+  @media(max-width: 769px) {
+    color: #000000;
+    margin-bottom: 12px;
+    &:nth-child(1) {
+      margin-top: 10px;
+    }
   }
 `
 export const Icons = styled.div`

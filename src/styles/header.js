@@ -1,20 +1,20 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   width: 80%;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  grid-template-areas: "header header";
   @media(max-width: 769px) {
     padding-top: 0;
-    width: 100%;
-    justify-items: center;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    grid-template-rows: 1fr 1fr;
+    flex-wrap: wrap;
   }
 `
 export const LogoName = styled.a`
@@ -23,7 +23,6 @@ export const LogoName = styled.a`
   font-weight: bold;
   font-family: 'Dosis', sans-serif;
   text-decoration: none;
-  grid-area: header;
   &:hover {
     cursor: pointer;
   }
@@ -35,13 +34,11 @@ export const LogoName = styled.a`
 export const I = styled.i`
   display: none;
   font-size: 30px;
-  grid-area: header;
   &:hover {
     cursor: pointer;
   }
   @media(max-width: 769px) {
     display: grid;
     justify-self: right;
-    margin-right: 20px;
   }
 `

@@ -6,7 +6,6 @@ import {
 } from '../styles/social'
 
 const Social = ({ hide }) => {
-  console.log(hide);
   return (
     <Banner hide={hide}>
       <SocialName href="https://github.com/rojasleon" target="_blank">Github</SocialName>
