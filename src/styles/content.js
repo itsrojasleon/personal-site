@@ -7,6 +7,10 @@ export const Container = styled.div`
 export const Description = styled.div`
   width: 80%;
   margin: auto;
+  @media(max-width: 769px) {
+    width: 90%;
+    justify-content: center;
+  }
 `
 export const ContainerInfo = styled.div`
   display: grid;
