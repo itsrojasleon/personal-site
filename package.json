@@ -16,7 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://rojasleon.github.io/personal-site"
+  "homepage": "http://rojasleon.github.io/personal-site",
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "svg-react-loader": "^0.4.5"
