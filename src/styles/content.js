@@ -32,3 +32,10 @@ export const AboutMe = styled.span`
     color: white;
   }
 `
+export const A = styled.a`
+  color: #000;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`
