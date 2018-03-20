@@ -6,8 +6,8 @@ export const Container = styled.div`
   width: 80%;
   justify-content: center;
   margin: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 `
 export const LogoName = styled.a`
   font-size: 48px;
