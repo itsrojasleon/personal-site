@@ -11,7 +11,8 @@ export const Banner = styled.div`
     display: ${ props => props.hide === false ? 'none' : 'flex'};
     flex-direction: column;
     width: 100%;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ffddd5;
+    background-color: #ffffff;
   }
 `
 export const SocialName = styled.a`

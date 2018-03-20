@@ -9,12 +9,15 @@ export const Container = styled.div`
   padding-bottom: 60px;
   @media(max-width: 769px) {
     padding-top: 0;
-    width: 90%;
+    padding-bottom: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #ffddd5;
+    margin-bottom: 50px;
   }
 `
 export const LogoName = styled.a`
@@ -30,6 +33,9 @@ export const LogoName = styled.a`
     background: black;
     color: white;
   }
+  @media(max-width: 769px) {
+    margin-left: 20px;
+  }
 `
 export const I = styled.i`
   display: none;
@@ -40,5 +46,6 @@ export const I = styled.i`
   @media(max-width: 769px) {
     display: grid;
     justify-self: right;
+    margin-right: 20px;
   }
 `
