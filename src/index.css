@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis:800');
+@import url('https://fonts.googleapis.com/css?family=Cardo');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-family: Helvetica;
+}
+h1::selection,h1::selection,h3::selection,h4::selection,h5::selection,h6::selection,p::selection,span::selection, a::selection {
+  background-color: black;
+  color: white;
 }
