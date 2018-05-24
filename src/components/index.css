@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
+  width: 88%;
+  margin: auto;
 }
 .social {
   display: flex;
@@ -10,8 +12,12 @@
 .by {
   font-size: 18px;
 }
-.fa-github,
-.fa-twitter,
-.fa-linkedin-in {
-  font-size: 1.5em;
+.social-media {
+  font-size: 1.8em;
+  color: #000;
+  text-decoration: none;
+}
+@media(max-width: 769px) {
+  .footer { width: 100%; grid-template-columns: 1fr; justify-items: center; }
+  .social { flex-direction: column; }
 }
