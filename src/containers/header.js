@@ -13,11 +13,11 @@ class Header extends Component {
     return (
       <header className="header">
         <nav className="nav">
-          <Link to="/">
-            <img width="30%" src={logo} alt="Rojas León" />
+          <Link className="logo" to="/">
+            <img className="image-logo" src={logo} alt="Rojas León" />
           </Link>
-          <i onClick={toggleMenu} class={toggle ? 'fa fa-bars' : 'fa fa-times'}></i>
-          <div className="links">
+          <i onClick={toggleMenu} className={toggle ? 'fa fa-bars' : 'fa fa-times'}></i>
+          <div className={`links ${toggle}`}>
             <NavLink activeStyle={{ fontWeight: 'bold', color: 'rgb(222,0,62)' }} className="link-header" to="/about">About</NavLink>
             <NavLink activeStyle={{ fontWeight: 'bold', color: 'rgb(222,0,62)' }} className="link-header" to="/portfolio">Portfolio</NavLink>
           </div>
