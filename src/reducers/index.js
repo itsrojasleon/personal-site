@@ -13,6 +13,6 @@ function toggle(state = true, action) {
 }
 
 export default combineReducers({
-  loadingBar: loadingBarReducer,
   toggle,
+  loadingBar: loadingBarReducer,
 });

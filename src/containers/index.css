@@ -36,7 +36,6 @@
   font-size: 3em;
   font-weight: 900;
   font-family: 'Cardo', serif;
-  margin-top: 90px;
   margin-bottom: 60px;
 }
 .description {
@@ -98,6 +97,7 @@
   .fa-bars, .fa-times {
     display: block;
     justify-self: end;
+    margin-right: 20px;
   }
   .links {
     display: none;

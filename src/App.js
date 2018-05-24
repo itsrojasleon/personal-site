@@ -4,6 +4,7 @@ import LoadingBar from 'react-redux-loading';
 
 import Home from './containers/home';
 import Portfolio from './containers/portfolio';
+import About from './containers/about';
 import Header from './containers/header';
 import Footer from './components/footer';
 
@@ -12,10 +13,12 @@ class App extends Component {
     return (
       <Router>
         <div style={{ width: '100%', height: '100vh' }}>
-          <Header />
           <LoadingBar />
+          <Header />
+          <div style={{ marginTop: 100 }}></div>
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
             <Route path="/portfolio" component={Portfolio} />
           </Switch>
           <Footer />
