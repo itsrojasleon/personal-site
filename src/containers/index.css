@@ -1,0 +1,44 @@
+.nav {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.header {
+  background-color: white;
+  width: 100%;
+  position: abolute;
+  z-index: 999;
+  border-bottom: 1px solid #ECEFF1;
+}
+.link-header {
+  color: #888;
+  text-decoration: none;
+  transition: .3s;
+  margin-left: 30px;
+  font-size: 16px;
+}
+.link-header:hover {
+  color: black;
+}
+.links {
+  width: '100%';
+  display: flex;
+  justify-content: center;
+}
+.title {
+  font-size: 2em;
+}
+.description {
+  color: rgb(95,96,97);
+  font-size: 1.8em;
+  font-weight: lighter;
+  line-height: 1.7em;
+}
+.email, .github {
+  color: rgb(222,0,62);
+  text-decoration: none;
+}

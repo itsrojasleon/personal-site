@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import LoadingBar from 'react-redux-loading';
 
 import Home from './containers/home';
+import Portfolio from './containers/portfolio';
 import Header from './containers/header';
 
 class App extends Component {
@@ -10,8 +12,10 @@ class App extends Component {
       <Router>
         <div style={{ width: '100%' }}>
           <Header />
+          <LoadingBar />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/portfolio" component={Portfolio} />
           </Switch>
           {/* <Footer /> */}
         </div>
