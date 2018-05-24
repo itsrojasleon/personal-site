@@ -1,0 +1,17 @@
+.footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+.by {
+  font-size: 18px;
+}
+.fa-github,
+.fa-twitter,
+.fa-linkedin-in {
+  font-size: 1.5em;
+}

@@ -30,15 +30,44 @@
   justify-content: center;
 }
 .title {
-  font-size: 2em;
+  font-size: 3em;
+  font-weight: 900;
+  font-family: 'Cardo', serif;
+  margin-bottom: 60px;
 }
 .description {
   color: rgb(95,96,97);
   font-size: 1.8em;
   font-weight: lighter;
   line-height: 1.7em;
+  margin-bottom: 60px;
 }
 .email, .github {
   color: rgb(222,0,62);
   text-decoration: none;
+}
+.container-currently {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 100%;
+  justify-items: center;
+}
+.currently {
+  font-size: 1.4em;
+  color: 424242;
+  font-weight: lighter;
+}
+.single-line {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+@media(max-width: 769px) {
+  .single-line {
+    display: none;
+  }
+  .container-currently {
+    grid-template-columns: 1fr;
+  }
 }
