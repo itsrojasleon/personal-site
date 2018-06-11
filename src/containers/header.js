@@ -16,11 +16,15 @@ class Header extends Component {
           <Link className="logo" to="/">
             <img className="image-logo" src={logo} alt="Rojas León" />
           </Link>
-          <i onClick={toggleMenu} className={toggle ? 'fa fa-bars' : 'fa fa-times'}></i>
-          <div className={`links ${toggle}`}>
-            <NavLink activeStyle={{ fontWeight: 'bold', color: 'rgb(222,0,62)' }} className="link-header" to="/about">About</NavLink>
-            <NavLink activeStyle={{ fontWeight: 'bold', color: 'rgb(222,0,62)' }} className="link-header" to="/portfolio">Portfolio</NavLink>
-          </div>
+          <button onClick={toggleMenu} className={toggle === false ? 'burger' : 'burger-active'}>
+            <span className={`line`}></span>
+          </button>
+          <ul className={toggle === false ? 'list' : 'list-active'}>
+            <li>
+              <NavLink className={`link`} to="/about">About</NavLink>
+              <NavLink className={`link`} to="/discover">Descubre</NavLink>
+            </li>
+          </ul>
         </nav>
       </header>
     );

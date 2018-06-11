@@ -1,11 +1,13 @@
 .nav {
-  width: 90%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  width: 75%;
   margin: auto;
   box-sizing: border-box;
-  grid-gap: 20px;
+  border-bottom: 1.2px solid #ccc;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 6px;
+  box-sizing: border-box;
 }
 .header {
   background-color: white;
@@ -15,22 +17,6 @@
   overflow: hidden;
   z-index: 999;
   border-bottom: 1px solid #ECEFF1;
-}
-.link-header {
-  color: #888;
-  text-decoration: none;
-  transition: .3s;
-  margin-left: 30px;
-  font-size: 16px;
-  text-align:
-}
-.link-header:hover {
-  color: black;
-}
-.links {
-  width: '100%';
-  display: flex;
-  justify-content: flex-end;
 }
 .title {
   font-size: 3em;
@@ -74,6 +60,145 @@
 .image-logo {
   width: 70px;
 }
+
+/*burger Menu*/
+.burger, .burger-active {
+  width: 24px;
+  height: 30px;
+  position: relative;
+  background: transparent;
+  border: none;
+  vertical-align: middle;
+  margin: 0;
+  cursor: pointer;
+  display: block;
+  float: right;
+  padding: 0;
+  top: -2px;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: none;
+}
+.burger:focus, .burger-active:focus {
+  outline: 0;
+}
+.burger::before {
+  content: '';
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  -webkit-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.burger-active::before {
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: transparent;
+  transform: translate(-50%,-50%);
+  transition: all 0.4s ease;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  -webkit-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.burger-active .line {
+  background: transparent;
+  width: 100%;
+  height: 2px;
+  transition: all 0.4s ease;
+  display: block;
+  position: relative;
+}
+.line::before {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  -webkit-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  top: -6px;
+  content: '';
+  position: absolute;
+  left: 0;
+}
+.burger-active .line::before {
+  top: 0;
+  transform: rotate(225deg);
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transition: all 0.4s ease;
+
+  content: '';
+  position: absolute;
+  left: 0;
+}
+.line::after {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  -webkit-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  bottom: -6px;
+  content: '';
+  position: absolute;
+  left: 0;
+}
+.burger-active .line::after {
+  bottom: 0;
+  transform: rotate(-225deg);
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transition: all 0.4s ease;
+  content: '';
+  position: absolute;
+  left: 0;
+}
+.list, .list-active {
+  list-style: none;
+  display: block;
+  justify-self: end;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  transition: .3s;
+  margin-right: 1.4em;
+  font-size: 1.1em;
+}
+.link:hover {
+  color: #727272;
+}
 @media(max-width: 769px) {
   .nav {
     grid-template-areas: "logo icons"
@@ -83,9 +208,6 @@
   .logo {
     grid-area: logo;
   }
-  .fa-bars, .fa-times {
-    grid-area: icons;
-  }
   .single-line {
     display: none;
   }
@@ -94,11 +216,6 @@
   }
   .container-currently {
     grid-template-columns: 1fr;
-  }
-  .fa-bars, .fa-times {
-    display: block;
-    justify-self: end;
-    margin-right: 20px;
   }
   .links {
     display: none;
@@ -117,5 +234,30 @@
     font-size: 2em;
     margin-bottom: 20px;
     margin-top: 20px;
+  }
+  .burger, .burger-active {
+    display: block;
+    justify-self: end;
+    grid-area: icons;
+  }
+  .list {
+      display: none;
+  }
+  .list-active {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    grid-area: links;
+    margin-top: 1.5em;
+  }
+  .link {
+    font-size: 1.3em;
+    border-top: 1px solid var(--link-burger-border-color);
+    width: 100%;
+    display: block;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    box-sizing: border-box;
   }
 }
