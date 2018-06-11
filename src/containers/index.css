@@ -2,7 +2,7 @@
   width: 75%;
   margin: auto;
   box-sizing: border-box;
-  border-bottom: 1.2px solid #ccc;
+  border-bottom: 1px solid #ECEFF1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -16,7 +16,6 @@
   top: 0;
   overflow: hidden;
   z-index: 999;
-  border-bottom: 1px solid #ECEFF1;
 }
 .title {
   font-size: 3em;
