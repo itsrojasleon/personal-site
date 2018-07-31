@@ -19,7 +19,7 @@ class Home extends Component {
         </div>
         <div className="container-currently">
           <span className="single-line"></span>
-          <span className="currently">Currently developing open source and freelance</span>
+          <span className="currently">Currently developing open source</span>
           <span className="single-line"></span>
         </div>
       </div>
