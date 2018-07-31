@@ -16,10 +16,10 @@ class Header extends Component {
           <Link className="logo" to="/">
             <img className="image-logo" src={logo} alt="Rojas León" />
           </Link>
-          <button onClick={toggleMenu} className={toggle === false ? 'burger' : 'burger-active'}>
+          <button onClick={toggleMenu} className={toggle === true ? 'burger' : 'burger-active'}>
             <span className={`line`}></span>
           </button>
-          <ul className={toggle === false ? 'list' : 'list-active'}>
+          <ul className={toggle === true ? 'list' : 'list-active'}>
             <li>
               <NavLink className={`link`} to="/about">About</NavLink>
               <NavLink className={`link`} to="/discover">Descubre</NavLink>

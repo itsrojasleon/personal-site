@@ -14,7 +14,7 @@ class Home extends Component {
           <p className="description">
             I'm React / Frontend developer.
             Please visit my <a className="github" href="https://github.com/rojasleon">Github</a> to see my work.
-            I love teaching and learning; so if I can help you in something don't hesitate to <a className="email" href="mailto:luisrojasleon5@gmail.com">contact me</a>.
+            I love teaching and learning; so if I can help you in something don't hesitate to <a className="email" href="mailto:hello@luisrojas.me">contact me</a>.
           </p>
         </div>
         <div className="container-currently">

@@ -20,8 +20,9 @@
 .title {
   font-size: 3em;
   font-weight: 900;
-  font-family: 'Cardo', serif;
+  font-family: 'Open Sans', serif;
   margin-bottom: 60px;
+  padding-top: 30px;
 }
 .description {
   color: rgb(95,96,97);
@@ -258,5 +259,9 @@
     padding-top: .7em;
     padding-bottom: .7em;
     box-sizing: border-box;
+  }
+  .link:hover {
+    background-color: rgb(220,220,220);
+    color: black;
   }
 }
