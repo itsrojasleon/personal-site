@@ -3,12 +3,8 @@ import { connect } from 'react-redux';
 
 class Home extends Component {
   render() {
-    const style = {
-      width: '88%',
-      margin: 'auto'
-    };
     return (
-      <div style={style}>
+      <div className="home-container">
         <h1 className="title">Juan Luis Rojas León</h1>
         <div>
           <p className="description">

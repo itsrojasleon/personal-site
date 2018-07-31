@@ -17,19 +17,20 @@
   overflow: hidden;
   z-index: 999;
 }
+.home-container {
+  width: 88%;
+  margin: auto;
+}
 .title {
   font-size: 3em;
   font-weight: 900;
   font-family: 'Open Sans', serif;
-  margin-bottom: 60px;
-  padding-top: 30px;
 }
 .description {
   color: rgb(95,96,97);
   font-size: 1.8em;
   font-weight: lighter;
   line-height: 1.7em;
-  margin-bottom: 60px;
 }
 .email, .github {
   color: rgb(222,0,62);

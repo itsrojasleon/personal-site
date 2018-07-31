@@ -10,9 +10,10 @@ import Footer from './components/footer';
 
 class App extends Component {
   render() {
+    console.log(this.props)
     return (
       <Router>
-        <div style={{ width: '100%', height: '100vh' }}>
+        <div className="super-container">
           <LoadingBar />
           <Header />
           <div style={{ marginTop: 100 }}></div>

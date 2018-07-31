@@ -22,7 +22,7 @@ class Header extends Component {
           <ul className={toggle === true ? 'list' : 'list-active'}>
             <li>
               <NavLink className={`link`} to="/about">About</NavLink>
-              <NavLink className={`link`} to="/discover">Descubre</NavLink>
+              <NavLink className={`link`} to="/portfolio">Portfolio</NavLink>
             </li>
           </ul>
         </nav>
