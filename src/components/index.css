@@ -4,6 +4,8 @@
   align-items: center;
   width: 88%;
   margin: auto;
+  bottom: 0;
+  height: auto;
 }
 .social {
   display: flex;

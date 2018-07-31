@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 body {
   margin: 0;
@@ -12,4 +12,9 @@ body {
 h1::selection,h1::selection,h3::selection,h4::selection,h5::selection,h6::selection,p::selection,span::selection, a::selection {
   background-color: black;
   color: white;
+}
+@media(max-width: 769px) {
+	.super-container {
+		height: 100vh;
+	}
 }

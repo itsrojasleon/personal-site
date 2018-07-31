@@ -20,10 +20,14 @@
 .home-container {
   width: 88%;
   margin: auto;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .title {
   font-size: 3em;
-  font-weight: 900;
+  font-weight: bolder;
   font-family: 'Open Sans', serif;
 }
 .description {
@@ -264,5 +268,18 @@
   .link:hover {
     background-color: rgb(220,220,220);
     color: black;
+  }
+  .title {
+    font-size: 2.3em;
+  }
+  .description {
+    font-size: 1.4em;
+  }
+  .currently {
+    font-size: 1.1em;
+  }
+  .home-container {
+    justify-content: space-between;
+    height: 70%;
   }
 }
