@@ -18,10 +18,9 @@ class App extends Component {
           <Header />
           <div style={{ marginTop: 100 }}></div>
           <Switch>
-            <Route exact path="/home" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/portfolio" component={Portfolio} />
-            <Redirect from="/" to="home" />
           </Switch>
           <Footer />
         </div>
