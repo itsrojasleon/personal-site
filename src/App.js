@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import LoadingBar from 'react-redux-loading';
 
 import Home from './containers/home';
@@ -10,7 +10,7 @@ import Footer from './components/footer';
 
 class App extends Component {
   render() {
-    console.log(this.props)
+    console.log(this.props);
     return (
       <Router>
         <div className="super-container">
@@ -18,9 +18,10 @@ class App extends Component {
           <Header />
           <div style={{ marginTop: 100 }}></div>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/portfolio" component={Portfolio} />
+            <Redirect from="/" to="home" />
           </Switch>
           <Footer />
         </div>
