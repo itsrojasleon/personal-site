@@ -2,11 +2,12 @@ import React, { Component, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LoadingBar from 'react-redux-loading';
 
-import Header from './containers/header';
-import Footer from './components/footer';
-const Home = lazy(() => import('./containers/home'));
-const Portfolio = lazy(() => import('./containers/portfolio'));
-const About = lazy(() => import('./containers/about'));
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+const Home = lazy(() => import('./containers/Home'));
+const Portfolio = lazy(() => import('./containers/Portfolio'));
+const About = lazy(() => import('./containers/About'));
 
 class App extends Component {
   render() {
