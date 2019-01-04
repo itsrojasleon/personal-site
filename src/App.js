@@ -10,7 +10,6 @@ import Footer from './components/footer';
 
 class App extends Component {
   render() {
-    console.log(this.props);
     return (
       <Router>
         <div className="super-container">
@@ -28,5 +27,4 @@ class App extends Component {
     );
   }
 }
-
 export default App
