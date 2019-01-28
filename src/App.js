@@ -16,7 +16,7 @@ class App extends Component {
         <div className="super-container">
           <LoadingBar />
           <Header />
-          <div style={{ marginTop: 100 }}></div>
+          <div style={{ marginTop: 100, flex: 1 }} />
           <Suspense fallback={null}>
             <Switch>
               <Route exact path="/" component={Home} />
@@ -30,4 +30,4 @@ class App extends Component {
     );
   }
 }
-export default App
+export default App;

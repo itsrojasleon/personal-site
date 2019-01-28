@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { toggleMenu } from '../actions';
 import logo from '../icon-rojas.svg';
@@ -16,13 +16,19 @@ class Header extends Component {
           <Link className="logo" to="/">
             <img className="image-logo" src={logo} alt="Rojas León" />
           </Link>
-          <button onClick={toggleMenu} className={toggle === true ? 'burger' : 'burger-active'}>
-            <span className={`line`}></span>
+          <button
+            onClick={toggleMenu}
+            className={toggle === true ? 'burger' : 'burger-active'}>
+            <span className={`line`} />
           </button>
           <ul className={toggle === true ? 'list' : 'list-active'}>
             <li>
-              <NavLink className={`link`} to="/about">About</NavLink>
-              <NavLink className={`link`} to="/portfolio">Portfolio</NavLink>
+              <Link className="link" to="/about">
+                About
+              </Link>
+              <Link className="link" to="/portfolio">
+                Portfolio
+              </Link>
             </li>
           </ul>
         </nav>
@@ -31,6 +37,9 @@ class Header extends Component {
   }
 }
 const mapStateToProps = ({ toggle }) => ({
-  toggle,
+  toggle
 });
-export default connect(mapStateToProps, { toggleMenu })(Header);
+export default connect(
+  mapStateToProps,
+  { toggleMenu }
+)(Header);

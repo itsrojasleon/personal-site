@@ -19,9 +19,15 @@
   color: #000;
   text-decoration: none;
 }
-@media(max-width: 769px) {
-  .footer { width: 100%; grid-template-columns: 1fr; justify-items: center; }
-  .social { flex-direction: column; }
+@media (max-width: 769px) {
+  .footer {
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .social {
+    flex-direction: column;
+  }
 }
 
 /*HEADER JS*/
@@ -32,7 +38,7 @@
   width: 75%;
   margin: auto;
   box-sizing: border-box;
-  border-bottom: 1px solid #ECEFF1;
+  border-bottom: 1px solid #eceff1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -40,12 +46,13 @@
   box-sizing: border-box;
 }
 .header {
-  background-color: white;
+  background-color: #f1f2f2;
   width: 100%;
   position: fixed;
   top: 0;
   overflow: hidden;
   z-index: 999;
+  color: rgb(47, 47, 47);
 }
 .home-container {
   width: 88%;
@@ -61,13 +68,13 @@
   font-family: 'Open Sans', serif;
 }
 .description {
-  color: rgb(95,96,97);
-  font-size: 1.8em;
-  font-weight: lighter;
+  font-size: 1.6em;
   line-height: 1.7em;
+  font-family: 'Open Sans', sans-serif;
 }
-.email, .github {
-  color: rgb(222,0,62);
+.email,
+.github {
+  color: rgb(222, 0, 62);
   text-decoration: none;
 }
 .container-currently {
@@ -88,16 +95,19 @@
   width: 100%;
   background-color: black;
 }
-.fa-bars, .fa-times {
+.fa-bars,
+.fa-times {
   display: none;
   font-size: 1.6em;
 }
 .image-logo {
-  width: 70px;
+  width: 55px;
+  border-radius: 5px;
 }
 
 /*burger Menu*/
-.burger, .burger-active {
+.burger,
+.burger-active {
   width: 24px;
   height: 30px;
   position: relative;
@@ -119,7 +129,8 @@
   text-shadow: none;
   display: none;
 }
-.burger:focus, .burger-active:focus {
+.burger:focus,
+.burger-active:focus {
   outline: 0;
 }
 .burger::before {
@@ -132,10 +143,10 @@
   top: 50%;
   left: 50%;
   background: transparent;
-  -webkit-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -webkit-transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -150,7 +161,7 @@
   top: 50%;
   left: 50%;
   background: transparent;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   transition: all 0.4s ease;
 }
 .line {
@@ -219,7 +230,8 @@
   position: absolute;
   left: 0;
 }
-.list, .list-active {
+.list,
+.list-active {
   list-style: none;
   display: block;
   justify-self: end;
@@ -227,17 +239,18 @@
 .link {
   text-decoration: none;
   color: black;
-  transition: .3s;
+  transition: 0.3s;
   margin-right: 1.4em;
   font-size: 1.1em;
 }
 .link:hover {
   color: #727272;
 }
-@media(max-width: 769px) {
+@media (max-width: 769px) {
   .nav {
-    grid-template-areas: "logo icons"
-                         "links links";
+    grid-template-areas:
+      'logo icons'
+      'links links';
     width: 100%;
   }
   .logo {
@@ -263,20 +276,21 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    background: rgb(245,245,245);
+    background: rgb(245, 245, 245);
   }
   .links.false .link-header {
     font-size: 2em;
     margin-bottom: 20px;
     margin-top: 20px;
   }
-  .burger, .burger-active {
+  .burger,
+  .burger-active {
     display: block;
     justify-self: end;
     grid-area: icons;
   }
   .list {
-      display: none;
+    display: none;
   }
   .list-active {
     width: 100%;
@@ -287,17 +301,17 @@
     margin-top: 1.5em;
   }
   .link {
-    font-size: 1.3em;
+    font-size: 1.6em;
     border-top: 1px solid var(--link-burger-border-color);
     width: 100%;
-    display: block;
-    padding-top: .7em;
-    padding-bottom: .7em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
     box-sizing: border-box;
   }
   .link:hover {
-    background-color: rgb(220,220,220);
     color: black;
+    font-weight: normal;
+    text-decoration: underline black;
   }
   .title {
     font-size: 2.3em;
