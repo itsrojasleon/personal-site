@@ -38,7 +38,6 @@
   width: 75%;
   margin: auto;
   box-sizing: border-box;
-  border-bottom: 1px solid #eceff1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -74,8 +73,13 @@
 }
 .email,
 .github {
-  color: rgb(222, 0, 62);
+  color: black;
+  font-weight: bold;
   text-decoration: none;
+}
+.email:hover,
+.github:hover {
+  text-decoration: underline;
 }
 .container-currently {
   display: grid;
@@ -236,14 +240,15 @@
   justify-self: end;
 }
 .link {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
   transition: 0.3s;
   margin-right: 1.4em;
   font-size: 1.1em;
+  font-weight: 600;
 }
 .link:hover {
-  color: #727272;
+  text-decoration: underline;
 }
 @media (max-width: 769px) {
   .nav {
@@ -309,8 +314,9 @@
     box-sizing: border-box;
   }
   .link:hover {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(231, 232, 232);
     color: black;
+    text-decoration: none;
   }
   .title {
     font-size: 2.3em;
