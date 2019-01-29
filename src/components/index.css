@@ -64,13 +64,13 @@
 .title {
   font-size: 3em;
   font-weight: bolder;
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .description {
   color: rgb(95, 96, 97);
   font-size: 1.8em;
-  font-weight: lighter;
   line-height: 1.7em;
+  font-family: 'Open Sans', sans-serif;
 }
 .email,
 .github {
