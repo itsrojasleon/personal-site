@@ -253,7 +253,11 @@
   text-decoration: underline;
 }
 .fa-cog {
+  transition: 0.3s;
+}
+.fa-cog:hover {
   cursor: pointer;
+  transform: scale(1.3);
 }
 @media (max-width: 769px) {
   .nav {
