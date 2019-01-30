@@ -236,7 +236,7 @@
 .list,
 .list-active {
   list-style: none;
-  display: block;
+  display: flex;
   justify-self: end;
 }
 .link {
@@ -249,6 +249,9 @@
 }
 .link:hover {
   text-decoration: underline;
+}
+.fa-cog {
+  cursor: pointer;
 }
 @media (max-width: 769px) {
   .nav {

@@ -26,9 +26,14 @@ class Header extends Component {
               <NavLink className={`link`} to="/about">
                 About
               </NavLink>
+            </li>
+            <li>
               <NavLink className={`link`} to="/portfolio">
                 Portfolio
               </NavLink>
+            </li>
+            <li>
+              <i className="fas fa-cog" />
             </li>
           </ul>
         </nav>

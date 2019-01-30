@@ -8,7 +8,7 @@ class Home extends Component {
         <h1 className="title">Juan Luis Rojas León</h1>
         <div>
           <p className="description">
-            I'm React / Frontend developer. Please visit my{' '}
+            I'm Software Developer. Please visit my{' '}
             <a
               className="github"
               target="_blank"
