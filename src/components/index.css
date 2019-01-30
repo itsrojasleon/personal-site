@@ -38,10 +38,6 @@
   width: 75%;
   margin: auto;
   box-sizing: border-box;
-<<<<<<< HEAD
-=======
-  border-bottom: 1px solid #eceff1;
->>>>>>> 6592433d27209da9cc1a6acd45eb37185de01893
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -71,23 +67,15 @@
   font-family: 'Open Sans', sans-serif;
 }
 .description {
-<<<<<<< HEAD
   color: rgb(95, 96, 97);
   font-size: 1.8em;
-=======
-  font-size: 1.6em;
->>>>>>> 6592433d27209da9cc1a6acd45eb37185de01893
   line-height: 1.7em;
   font-family: 'Open Sans', sans-serif;
 }
 .email,
 .github {
-<<<<<<< HEAD
   color: black;
   font-weight: bold;
-=======
-  color: rgb(222, 0, 62);
->>>>>>> 6592433d27209da9cc1a6acd45eb37185de01893
   text-decoration: none;
 }
 .email:hover,
@@ -119,10 +107,6 @@
 }
 .image-logo {
   width: 55px;
-<<<<<<< HEAD
-=======
-  border-radius: 5px;
->>>>>>> 6592433d27209da9cc1a6acd45eb37185de01893
 }
 
 /*burger Menu*/
@@ -258,10 +242,7 @@
 }
 .link {
   color: black;
-<<<<<<< HEAD
   text-decoration: none;
-=======
->>>>>>> 6592433d27209da9cc1a6acd45eb37185de01893
   transition: 0.3s;
   margin-right: 1.4em;
   font-size: 1.1em;
@@ -270,12 +251,9 @@
 .link:hover {
   text-decoration: underline;
 }
-<<<<<<< HEAD
 .fa-cog {
   cursor: pointer;
 }
-=======
->>>>>>> 6592433d27209da9cc1a6acd45eb37185de01893
 @media (max-width: 769px) {
   .nav {
     grid-template-areas:
@@ -334,24 +312,15 @@
     font-size: 1.6em;
     border-top: 1px solid var(--link-burger-border-color);
     width: 100%;
-<<<<<<< HEAD
     display: block;
-=======
->>>>>>> 6592433d27209da9cc1a6acd45eb37185de01893
     padding-top: 0.7em;
     padding-bottom: 0.7em;
     box-sizing: border-box;
   }
   .link:hover {
-<<<<<<< HEAD
     background-color: rgb(231, 232, 232);
     color: black;
     text-decoration: none;
-=======
-    color: black;
-    font-weight: normal;
-    text-decoration: underline black;
->>>>>>> 6592433d27209da9cc1a6acd45eb37185de01893
   }
   .title {
     font-size: 2.3em;
