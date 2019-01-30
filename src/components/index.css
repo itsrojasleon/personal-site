@@ -107,6 +107,7 @@
 }
 .image-logo {
   width: 55px;
+  border-radius: 4px;
 }
 
 /*burger Menu*/
