@@ -4,7 +4,7 @@ import './index.css';
 const Footer = props => (
   <footer className="footer">
     <div>
-      <p className="by">© Juan Luis Rojas León - 2018</p>
+      <p className="by">© Juan Luis Rojas León - 2019</p>
     </div>
     <div className="social">
       <a
