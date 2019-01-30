@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { toggleMenu } from '../actions';
 import logo from '../icon-rojas.svg';
@@ -23,6 +23,7 @@ class Header extends Component {
           </button>
           <ul className={toggle === true ? 'list' : 'list-active'}>
             <li>
+<<<<<<< HEAD
               <NavLink className={`link`} to="/about">
                 About
               </NavLink>
@@ -34,6 +35,14 @@ class Header extends Component {
             </li>
             <li>
               <i className="fas fa-cog" />
+=======
+              <Link className="link" to="/about">
+                About
+              </Link>
+              <Link className="link" to="/portfolio">
+                Portfolio
+              </Link>
+>>>>>>> 6592433d27209da9cc1a6acd45eb37185de01893
             </li>
           </ul>
         </nav>
