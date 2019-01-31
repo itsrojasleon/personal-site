@@ -1,23 +1,10 @@
 .footer {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  width: 88%;
-  margin: auto;
-  bottom: 0;
-  height: auto;
 }
 .social {
-  display: flex;
-  justify-content: space-around;
 }
 .by {
-  font-size: 18px;
 }
 .social-media {
-  font-size: 1.8em;
-  color: #000;
-  text-decoration: none;
 }
 @media (max-width: 769px) {
   .footer {
