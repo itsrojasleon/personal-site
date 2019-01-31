@@ -15,7 +15,7 @@ function SocialItems() {
     },
     {
       id: 'linkedin',
-      url: 'www.linkedin.com/in/rojasleon',
+      url: 'https://www.linkedin.com/in/rojasleon',
       icon: 'fab fa-linkedin-in'
     }
   ];
