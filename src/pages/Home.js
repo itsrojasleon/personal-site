@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import Title from '../components/Title';
+
 class Home extends Component {
   render() {
     return (
       <div className="home-container">
-        <h1 className="title">Juan Luis Rojas León</h1>
+        <Title />
         <div>
           <p className="description">
             I'm Software Developer. Please visit my{' '}

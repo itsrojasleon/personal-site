@@ -5,9 +5,9 @@ import LoadingBar from 'react-redux-loading';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-const Home = lazy(() => import('./containers/Home'));
-const Portfolio = lazy(() => import('./containers/Portfolio'));
-const About = lazy(() => import('./containers/About'));
+const Home = lazy(() => import('./pages/Home'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const About = lazy(() => import('./pages/About'));
 
 class App extends Component {
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
           <LoadingBar />
           <Header />
           <div style={{ marginTop: 100, flex: 1 }} />
-          <Suspense fallback={null}>
+          <Suspense fallback={<div>LOADING...</div>}>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
