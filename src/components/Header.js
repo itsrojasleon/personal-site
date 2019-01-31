@@ -33,7 +33,7 @@ class Header extends Component {
               </NavLink>
             </li>
             <li>
-              <i className="fas fa-cog" />
+              <i className="fas fa-cog link-settings" />
             </li>
           </ul>
         </nav>
