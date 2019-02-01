@@ -1,6 +1,5 @@
 import React, { Component, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import LoadingBar from 'react-redux-loading';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -16,7 +15,6 @@ class App extends Component {
     return (
       <Router>
         <SuperContainer>
-          <LoadingBar />
           <Header />
           <div style={{ marginTop: 100, flex: 1 }} />
           <Suspense fallback={<div>LOADING...</div>}>
