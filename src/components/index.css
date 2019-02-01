@@ -1,7 +1,6 @@
 /*HEADER JS*/
 /*HEADER JS*/
 /*HEADER JS*/
-
 .nav {
   width: 75%;
   margin: auto;
@@ -21,52 +20,16 @@
   z-index: 999;
   color: rgb(47, 47, 47);
 }
-.home-container {
-  width: 88%;
-  margin: auto;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
 .title {
   font-size: 3em;
   font-weight: bolder;
   font-family: 'Open Sans', sans-serif;
 }
-.description {
-  color: rgb(95, 96, 97);
-  font-size: 1.8em;
-  line-height: 1.7em;
-  font-family: 'Open Sans', sans-serif;
-}
-.email,
-.github {
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-}
-.email:hover,
-.github:hover {
-  text-decoration: underline;
-}
 .container-currently {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  width: 100%;
-  justify-items: center;
 }
 .currently {
-  font-size: 1.4em;
-  color: 424242;
-  font-weight: lighter;
-  text-align: center;
 }
 .single-line {
-  height: 1px;
-  width: 100%;
-  background-color: black;
 }
 .fa-bars,
 .fa-times {
@@ -305,9 +268,5 @@
   }
   .currently {
     font-size: 1.1em;
-  }
-  .home-container {
-    justify-content: space-between;
-    height: 70%;
   }
 }

@@ -5,6 +5,8 @@ import LoadingBar from 'react-redux-loading';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+import { SuperContainer } from './styles/app';
+
 const Home = lazy(() => import('./pages/Home'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));
 const About = lazy(() => import('./pages/About'));
@@ -13,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="super-container">
+        <SuperContainer>
           <LoadingBar />
           <Header />
           <div style={{ marginTop: 100, flex: 1 }} />
@@ -25,7 +27,7 @@ class App extends Component {
             </Switch>
           </Suspense>
           <Footer />
-        </div>
+        </SuperContainer>
       </Router>
     );
   }
