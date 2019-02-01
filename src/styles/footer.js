@@ -8,6 +8,11 @@ export const FooterContainer = styled.footer`
   margin: auto;
   bottom: 0;
   height: auto;
+  @media (max-width: 769px) {
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 `;
 export const By = styled.p`
   font-size: 18px;
@@ -15,6 +20,9 @@ export const By = styled.p`
 export const Social = styled.div`
   display: flex;
   justify-content: space-around;
+  @media (max-width: 769px) {
+    flex-direction: column;
+  }
 `;
 
 // SocialItem.js Component

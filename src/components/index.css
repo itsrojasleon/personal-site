@@ -1,22 +1,3 @@
-.footer {
-}
-.social {
-}
-.by {
-}
-.social-media {
-}
-@media (max-width: 769px) {
-  .footer {
-    width: 100%;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  .social {
-    flex-direction: column;
-  }
-}
-
 /*HEADER JS*/
 /*HEADER JS*/
 /*HEADER JS*/
