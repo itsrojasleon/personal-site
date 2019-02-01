@@ -1,6 +1,7 @@
 import React from 'react';
+import { MyName } from '../styles/title';
 
 function Title() {
-  return <h1 className="title">Juan Luis Rojas León</h1>;
+  return <MyName>Juan Luis Rojas León</MyName>;
 }
 export default Title;

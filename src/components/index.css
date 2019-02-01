@@ -20,17 +20,6 @@
   z-index: 999;
   color: rgb(47, 47, 47);
 }
-.title {
-  font-size: 3em;
-  font-weight: bolder;
-  font-family: 'Open Sans', sans-serif;
-}
-.container-currently {
-}
-.currently {
-}
-.single-line {
-}
 .fa-bars,
 .fa-times {
   display: none;
