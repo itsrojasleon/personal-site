@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Open+Sans');
-
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
   font-family: 'Nunito Sans', 'Open Sans', sans-serif;
 }
 h1::selection,

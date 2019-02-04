@@ -16,7 +16,7 @@ class App extends Component {
       <Router>
         <SuperContainer>
           <Header />
-          <div style={{ marginTop: 100, flex: 1 }} />
+          <div style={{ marginTop: '70px', flex: 1 }} />
           <Suspense fallback={<div>LOADING...</div>}>
             <Switch>
               <Route exact path="/" component={Home} />

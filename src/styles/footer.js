@@ -17,6 +17,7 @@ export const FooterContainer = styled.footer`
 export const By = styled.p`
   font-size: 18px;
   color: rgb(122,123,123);
+  padding-bottom: 20px;
 `;
 export const Social = styled.div`
   display: flex;

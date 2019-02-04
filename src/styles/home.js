@@ -12,6 +12,7 @@ export const Description = styled.p`
   color: rgb(95, 96, 97);
   font-size: 1.8em;
   line-height: 1.7em;
+  text-align: justify;
 `;
 
 // Same style to Github and Email link
@@ -35,15 +36,21 @@ export const ContainerCurrently = styled.div`
   align-items: center;
   width: 100%;
   justify-items: center;
+  @media(max-width: 769px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 export const SingleLine = styled.span`
   height: 1px;
   width: 100%;
   background-color: black;
+  @media(max-width: 769px) {
+    display: none;
+  }
 `;
 export const Currently = styled.span`
   font-size: 1.4em;
-  color: 424242;
+  color: #424242;
   font-weight: lighter;
   text-align: center;
 `;

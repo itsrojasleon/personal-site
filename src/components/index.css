@@ -14,10 +14,6 @@
 .header {
   background-color: #f1f2f2;
   width: 100%;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  z-index: 999;
   color: rgb(47, 47, 47);
 }
 .fa-bars,
