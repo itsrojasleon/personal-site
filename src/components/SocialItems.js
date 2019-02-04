@@ -23,6 +23,7 @@ function SocialItems() {
     <>
       {socialMedia.map(social => (
         <SocialMedia
+        key={social.id}
           target="_blank"
           rel="noopener noreferrer"
           href={`${social.url}`}>
