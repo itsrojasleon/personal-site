@@ -1,49 +1,75 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { toggleMenu } from '../actions';
 import logo from '../icon-rojas.svg';
-import './index.css';
+import {
+  HeaderWrapper,
+  Nav,
+  Image,
+  Burger,
+  BurgerActive,
+  Line,
+  List,
+  ListActive,
+  Link,
+  LinkSettings
+} from '../styles/header';
 
 class Header extends Component {
+  renderList = () => {
+    const style = {
+      textDecoration: 'none',
+      color: 'black',
+      fontSize: '21px'
+    };
+    return (
+      <>
+        <Link>
+          <NavLink style={style} to="/about">
+            About
+          </NavLink>
+        </Link>
+        <Link>
+          <NavLink style={style} to="/portfolio">
+            Portfolio
+          </NavLink>
+        </Link>
+        <LinkSettings className="fas fa-cog" />
+      </>
+    );
+  };
   render() {
     // toggleMenu is the function
     // toggle is the value
     const { toggleMenu, toggle } = this.props;
     return (
-      <header className="header">
-        <nav className="nav">
-          <Link className="logo" to="/">
-            <img className="image-logo" src={logo} alt="Rojas León" />
-          </Link>
-          <button
-            onClick={toggleMenu}
-            className={toggle === true ? 'burger' : 'burger-active'}>
-            <span className={`line`} />
-          </button>
-          <ul className={toggle === true ? 'list' : 'list-active'}>
-            <li>
-              <NavLink className={`link`} to="/about">
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className={`link`} to="/portfolio">
-                Portfolio
-              </NavLink>
-            </li>
-            <li>
-              <i className="fas fa-cog link-settings" />
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <HeaderWrapper>
+        <Nav>
+          <NavLink to="/">
+            <Image src={logo} alt="Rojas León" />
+          </NavLink>
+          {toggle === true ? (
+            <Burger onClick={toggleMenu}>
+              <Line />
+            </Burger>
+          ) : (
+            <BurgerActive onClick={toggleMenu}>
+              <Line />
+            </BurgerActive>
+          )}
+          {toggle === true ? (
+            <List>{this.renderList()}</List>
+          ) : (
+            <ListActive>{this.renderList()}</ListActive>
+          )}
+        </Nav>
+      </HeaderWrapper>
     );
   }
 }
-const mapStateToProps = ({ toggle }) => ({
-  toggle
-});
+const mapStateToProps = ({ toggle }) => ({ toggle });
+
 export default connect(
   mapStateToProps,
   { toggleMenu }

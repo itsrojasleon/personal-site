@@ -1,9 +1,8 @@
 import React from 'react';
 import SocialItems from './SocialItems';
 import { FooterContainer, By, Social } from '../styles/footer';
-import './index.css';
 
-const Footer = props => (
+const Footer = () => (
   <FooterContainer>
     <By>© Juan Luis Rojas León - 2019</By>
     <Social>
