@@ -213,6 +213,11 @@ export const LinkSettings = styled.i`
   transition: 0.3s;
   text-align: center;
   background: none;
+  align-self: center;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
   @media (max-width: 769px) {
     ${styleLink}
     &:hover {

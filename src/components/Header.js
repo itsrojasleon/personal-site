@@ -3,6 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { toggleMenu } from '../actions';
 import logo from '../icon-rojas.svg';
+
+import Modal from '../components/Modal';
+
 import {
   HeaderWrapper,
   Nav,
