@@ -71,12 +71,7 @@ export const Burger = styled.button`
     top: 50%;
     left: 50%;
     background: transparent;
-    -webkit-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    -webkit-transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
   @media (max-width: 769px) {
@@ -87,9 +82,7 @@ export const Line = styled.span`
   width: 100%;
   height: 2px;
   background: #000;
-  -webkit-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  transition: 0.4s;
   display: block;
   position: relative;
   cursor: pointer;
@@ -97,8 +90,6 @@ export const Line = styled.span`
     width: 100%;
     height: 2px;
     background: #000;
-    -webkit-transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     top: -6px;
     content: '';
@@ -109,8 +100,6 @@ export const Line = styled.span`
     width: 100%;
     height: 2px;
     background: #000;
-    -webkit-transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     bottom: -6px;
     content: '';
