@@ -38,14 +38,17 @@ class Header extends Component {
             Portfolio
           </NavLink>
         </Link>
-        <LinkSettings onClick={this.props.toggleModal} className="fas fa-cog" />
+        <LinkSettings
+          onClick={() => this.props.toggleModal(true)}
+          className="fas fa-cog"
+        />
       </>
     );
   };
   render() {
     // toggleMenu is the function
     // toggle is the value
-    const { toggleMenu, toggle, modal } = this.props;
+    const { toggleMenu, toggle, toggleModal, modal } = this.props;
     return (
       <HeaderWrapper>
         <Nav>
@@ -67,7 +70,7 @@ class Header extends Component {
             <ListActive>{this.renderList()}</ListActive>
           )}
         </Nav>
-        {modal && <Modal />}
+        {modal && <Modal onDismiss={() => toggleModal(false)} />}
       </HeaderWrapper>
     );
   }

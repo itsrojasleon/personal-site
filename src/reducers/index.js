@@ -17,7 +17,7 @@ function toggle(state = initialState, action) {
     case TOGGLE_MODAL:
       return {
         ...state,
-        openModal: !state.openModal
+        openModal: action.payload
       };
     default:
       return state;
