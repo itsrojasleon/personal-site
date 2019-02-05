@@ -17,6 +17,7 @@ const Modal = props => {
             <p>Dark theme</p>
             <input type="checkbox" />
           </div>
+          COMING SOON...
         </Content>
       </ModalContent>
     </ModalWrapper>,
