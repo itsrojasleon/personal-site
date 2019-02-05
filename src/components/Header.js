@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { toggleMenu } from '../actions';
+import { toggleMenu, toggleModal } from '../actions';
 import logo from '../icon-rojas.svg';
 
 import Modal from '../components/Modal';
@@ -38,14 +38,14 @@ class Header extends Component {
             Portfolio
           </NavLink>
         </Link>
-        <LinkSettings className="fas fa-cog" />
+        <LinkSettings onClick={this.props.toggleModal} className="fas fa-cog" />
       </>
     );
   };
   render() {
     // toggleMenu is the function
     // toggle is the value
-    const { toggleMenu, toggle } = this.props;
+    const { toggleMenu, toggle, modal } = this.props;
     return (
       <HeaderWrapper>
         <Nav>
@@ -67,13 +67,17 @@ class Header extends Component {
             <ListActive>{this.renderList()}</ListActive>
           )}
         </Nav>
+        {modal && <Modal />}
       </HeaderWrapper>
     );
   }
 }
-const mapStateToProps = ({ toggle }) => ({ toggle });
+const mapStateToProps = ({ toggle }) => ({
+  toggle: toggle.openMenu,
+  modal: toggle.openModal
+});
 
 export default connect(
   mapStateToProps,
-  { toggleMenu }
+  { toggleMenu, toggleModal }
 )(Header);
