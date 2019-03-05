@@ -24,10 +24,7 @@ const sameStyle = css`
     text-decoration: underline;
   }
 `;
-export const Github = styled.a`
-  ${sameStyle}
-`;
-export const Email = styled.a`
+export const TextInBold = styled.a`
   ${sameStyle}
 `;
 export const ContainerCurrently = styled.div`
