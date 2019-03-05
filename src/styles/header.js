@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components';
 export const HeaderWrapper = styled.header`
   border-bottom: 1px solid rgb(240, 240, 240);
   width: 100%;
-  color: rgb(47, 47, 47);
 `;
 export const Nav = styled.nav`
   width: 75%;
@@ -194,11 +193,16 @@ const styleLinkMedia = css`
   text-decoration: none;
 `;
 export const Link = styled.li`
-  color: black;
   transition: 0.3s;
   margin-right: 1.4em;
   &:hover {
-    text-decoration: underline;
+    color: rgb(50, 158, 255);
+  }
+  & > a {
+    color: black;
+  }
+  & > a:hover {
+    color: rgb(50, 158, 255);
   }
   @media (max-width: 769px) {
     ${styleLink}
@@ -217,6 +221,7 @@ export const LinkSettings = styled.i`
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
+    color: rgb(50, 158, 255);
   }
   @media (max-width: 769px) {
     ${styleLink}

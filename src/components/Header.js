@@ -23,7 +23,6 @@ class Header extends Component {
   renderList = () => {
     const style = {
       textDecoration: 'none',
-      color: 'black',
       fontSize: '21px'
     };
     return (

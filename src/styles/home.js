@@ -17,7 +17,7 @@ export const Description = styled.p`
 
 // Same style to Github and Email link
 const sameStyle = css`
-  color: black;
+  color: rgb(50, 158, 255);
   font-weight: bold;
   text-decoration: none;
   &:hover {
@@ -36,7 +36,7 @@ export const ContainerCurrently = styled.div`
   align-items: center;
   width: 100%;
   justify-items: center;
-  @media(max-width: 769px) {
+  @media (max-width: 769px) {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
@@ -44,7 +44,7 @@ export const SingleLine = styled.span`
   height: 1px;
   width: 100%;
   background-color: black;
-  @media(max-width: 769px) {
+  @media (max-width: 769px) {
     display: none;
   }
 `;
