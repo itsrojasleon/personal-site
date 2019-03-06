@@ -34,7 +34,7 @@ function Home() {
           <TextInBold
             target="_blank"
             rel="noopener noreferrer"
-            href="https://repl.it/@rojasleon">
+            href="https://codesandbox.io/u/rojasleon">
             CodeSandbox
           </TextInBold>{' '}
           to see my skills
