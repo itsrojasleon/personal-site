@@ -23,16 +23,23 @@ function Home() {
             href="https://github.com/rojasleon">
             Github
           </TextInBold>{' '}
-          or{' '}
+          /{' '}
           <TextInBold
             target="_blank"
             rel="noopener noreferrer"
             href="https://repl.it/@rojasleon">
             Repl
           </TextInBold>{' '}
-          to see my skills<span style={{ color: 'rgb(50, 158, 255)' }}>.</span>{' '}
-          I love teaching and learning; so if I can help you in something don't
-          hesitate to{' '}
+          or{' '}
+          <TextInBold
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://repl.it/@rojasleon">
+            CodeSandbox
+          </TextInBold>{' '}
+          to see my skills
+          <span style={{ color: 'rgb(50, 158, 255)' }}>.</span> I love teaching
+          and learning; so if I can help you in something don't hesitate to{' '}
           <TextInBold className="email" href="mailto:rojasleon.dev@gmail.com">
             contact me
           </TextInBold>
