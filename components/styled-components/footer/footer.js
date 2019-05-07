@@ -26,9 +26,10 @@ export const Name = styled.span`
   margin-bottom: 10px;
 `;
 export const Email = styled.a`
-  color: rgb(50, 50, 50);
+  color: rgb(120, 120, 120);
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    color: rgb(60, 60, 60);
   }
 `;
