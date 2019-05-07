@@ -12,7 +12,7 @@ function Header() {
   return (
     <Container>
       <Nav>
-        <Link href="/home">
+        <Link href="/">
           <A big>
             <Img src="/static/rojas.png" alt="Rojas León" />
           </A>
