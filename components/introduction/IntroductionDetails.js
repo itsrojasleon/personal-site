@@ -31,14 +31,14 @@ function IntroductionDetails() {
             rel="noopener noreferrer"
             href="https://www.codewars.com/users/rojasleon">
             Codewars
-          </Social>{' '}
+          </Social>
           or
           <Social
             target="_blank"
             rel="noopener noreferrer"
             href="https://codesandbox.io/u/rojasleon">
             CodeSandbox
-          </Social>{' '}
+          </Social>
           to see my skills.
         </p>
       </Text>

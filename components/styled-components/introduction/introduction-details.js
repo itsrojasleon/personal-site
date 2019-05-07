@@ -9,9 +9,10 @@ export const Text = styled.span`
   color: rgb(100, 100, 100);
   line-height: 40px;
 `;
-export const Social = styled.strong`
+export const Social = styled.a`
   color: rgb(50, 158, 255);
   font-weight: 500;
+  text-decoration: none;
   &::after {
     content: ' ';
   }
