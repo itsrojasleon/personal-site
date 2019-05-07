@@ -27,3 +27,4 @@ yarn-error.log*
 # production
 build
 .next
+package-lock.json
