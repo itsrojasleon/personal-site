@@ -19,7 +19,7 @@ function Header() {
         </Link>
         <RightSide>
           <Link href="/about">
-            <A>Hello</A>
+            <A>About</A>
           </Link>
           <Link href="/portfolio">
             <A>Portfolio</A>
