@@ -9,4 +9,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   width: 80%;
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 `;
