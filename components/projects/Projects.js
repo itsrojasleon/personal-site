@@ -1,9 +1,6 @@
 import React from 'react';
-import {
-  Container,
-  Wrapper,
-  Img
-} from '../styled-components/projects/projects';
+import ProjectDetails from './ProjectDetails';
+import { Container, Wrapper } from '../styled-components/projects/projects';
 
 function Projects() {
   const base = {
@@ -21,7 +18,9 @@ function Projects() {
   return (
     <Container>
       <Wrapper>
-        <Img src="" />
+        {projects.map(project => (
+          <ProjectDetails key={project.name} {...project} />
+        ))}
       </Wrapper>
     </Container>
   );
