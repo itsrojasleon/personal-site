@@ -10,3 +10,7 @@ export const Wrapper = styled.div`
   width: 80%;
   margin: auto;
 `;
+export const Img = styled.img`
+  width: 50%;
+  border-radius: 8px;
+`;
