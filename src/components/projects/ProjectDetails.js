@@ -13,7 +13,7 @@ function ProjectDetails(props) {
 
   return (
     <Container>
-      <Img ref={imageEl} src={image} alt={name} />
+      <Img ref={imageEl} loading="lazy" src={image} alt={name} />
       <Content>
         <div>{name}</div>
         <div>{height}</div>
