@@ -10,12 +10,10 @@ function ProjectDetails(props) {
   const { image, name, description, tecnologies } = props;
   return (
     <Container>
-      <Picture>
-        <Img src={image} alt={name} />
-      </Picture>
-      <Content>
+      <Img src={image} alt={name} />
+      {/* <Content>
         <div>{name}</div>
-      </Content>
+      </Content> */}
     </Container>
   );
 }
