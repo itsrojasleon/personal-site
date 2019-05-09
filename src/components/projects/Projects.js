@@ -1,6 +1,7 @@
-import React from 'react';
-import ProjectDetails from './ProjectDetails';
+import React, { Suspense, lazy } from 'react';
 import { Container, Wrapper } from '../styled-components/projects/projects';
+
+const ProjectDetails = lazy(() => import('./ProjectDetails'));
 
 function Projects() {
   const base = {
@@ -18,9 +19,11 @@ function Projects() {
   return (
     <Container>
       <Wrapper>
-        {projects.map(project => (
-          <ProjectDetails key={project.name} {...project} />
-        ))}
+        <Suspense fallback={<h1>Loading...</h1>}>
+          {projects.map(project => (
+            <ProjectDetails key={project.name} {...project} />
+          ))}
+        </Suspense>
       </Wrapper>
     </Container>
   );
