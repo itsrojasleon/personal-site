@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterIconDetails from './FooterIconDetails';
-import { Container, Social } from '../styled-components/footer/footer-icons';
+import { Container } from '../styled-components/footer/footer-icons';
 
 function FooterIcons() {
   const socialMedia = [

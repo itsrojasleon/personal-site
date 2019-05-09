@@ -1,12 +1,11 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import Projects from '../components/projects/Projects';
 
 function Portfolio() {
   return (
-    <Layout title="My portfolio">
+    <div>
       <Projects />
-    </Layout>
+    </div>
   );
 }
 export default Portfolio;

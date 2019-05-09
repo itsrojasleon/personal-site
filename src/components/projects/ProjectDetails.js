@@ -1,21 +1,18 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {
   Container,
-  Picture,
   Img,
   Content
 } from '../styled-components/projects/project-details';
 
 function ProjectDetails(props) {
-  const imageEl = useRef(null);
-  const { image, name, description, tecnologies } = props;
+  const { image, name } = props;
   return (
     <Container>
-      <Img ref={imageEl} src={image} alt={name} />
-      <div>Height: {height}</div>
-      {/* <Content>
+      <Img src={image} alt={name} />
+      <Content>
         <div>{name}</div>
-      </Content> */}
+      </Content>
     </Container>
   );
 }

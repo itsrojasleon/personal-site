@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import logo from '../../rojas.png';
 import {
   Container,
   Nav,
@@ -12,18 +12,12 @@ function Header() {
   return (
     <Container>
       <Nav>
-        <Link href="/">
-          <A big>
-            <Img src="/static/rojas.png" alt="Rojas León" />
-          </A>
-        </Link>
+        <A to="/">
+          <Img src={logo} alt="Rojas León" />
+        </A>
         <RightSide>
-          <Link href="/about">
-            <A>About</A>
-          </Link>
-          <Link href="/portfolio">
-            <A>Portfolio</A>
-          </Link>
+          <A to="/about">About</A>
+          <A to="/portfolio">Portfolio</A>
         </RightSide>
       </Nav>
     </Container>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
   background-color: white;
@@ -14,8 +15,8 @@ export const Nav = styled.nav`
   align-items: center;
 `;
 export const RightSide = styled.div``;
-export const A = styled.a`
-  color: rgb();
+export const A = styled(Link)`
+  color: rgb(60, 60, 60);
   text-decoration: none;
   font-size: 18px;
   font-weight: lighter;
