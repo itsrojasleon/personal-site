@@ -14,6 +14,12 @@ function Projects() {
       name: 'Search Music v2',
       description: '',
       tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
+    },
+    {
+      image: `${base.url}/search-music-v1.png${base.parameter}`,
+      name: 'Search Music v1',
+      description: '',
+      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
     }
   ];
   return (

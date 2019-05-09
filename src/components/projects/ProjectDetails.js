@@ -9,14 +9,17 @@ import {
 function ProjectDetails(props) {
   const imageEl = useRef(null);
   const { image, name } = props;
-  const height = useImage(imageEl);
-
+  const spans = useImage(imageEl);
   return (
     <Container>
-      <Img ref={imageEl} src={image} alt={name} />
+      <Img
+        style={{ gridRowEnd: `span ${spans}` }}
+        ref={imageEl}
+        src={image}
+        alt={name}
+      />
       <Content>
         <div>{name}</div>
-        <div>{height}</div>
       </Content>
     </Container>
   );

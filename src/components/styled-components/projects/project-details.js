@@ -11,9 +11,7 @@ export const Container = styled.div`
 export const Img = styled.img`
   width: 100%;
   max-width: 100%;
-  height: 100%;
   padding: 0;
-  position: relative;
 `;
 export const Content = styled.div`
   padding: 10px;
