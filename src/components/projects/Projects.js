@@ -26,6 +26,18 @@ function Projects() {
       name: 'Emaily',
       description: '',
       tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
+    },
+    {
+      image: `${base.url}/webpage.png${base.parameter}`,
+      name: 'Emaily',
+      description: '',
+      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
+    },
+    {
+      image: `${base.url}/gifs-and-stickers.png${base.parameter}`,
+      name: 'Gifs and stickers',
+      description: '',
+      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
     }
   ];
   return (
