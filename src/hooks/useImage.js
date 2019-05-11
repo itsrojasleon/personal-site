@@ -6,7 +6,7 @@ function useImage(imageElement) {
     const image = imageElement.current;
 
     const setLoaded = () => {
-      setSpans(Math.ceil(image.clientHeight / 150));
+      setSpans(Math.ceil(image.clientHeight / 10));
     };
     image.addEventListener('load', setLoaded);
     return () => {

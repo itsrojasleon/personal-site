@@ -11,13 +11,8 @@ function ProjectDetails(props) {
   const { image, name } = props;
   const spans = useImage(imageEl);
   return (
-    <Container>
-      <Img
-        style={{ gridRowEnd: `span ${spans}` }}
-        ref={imageEl}
-        src={image}
-        alt={name}
-      />
+    <Container spans={spans}>
+      <Img ref={imageEl} src={image} alt={name} />
       <Content>
         <div>{name}</div>
       </Content>
