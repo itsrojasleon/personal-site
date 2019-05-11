@@ -29,67 +29,7 @@ function Projects() {
     },
     {
       image: `${base.url}/webpage.png${base.parameter}`,
-      name: 'Emaily',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/gifs-and-stickers.png${base.parameter}`,
-      name: 'Gifs and stickers',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/search-music-v2.png${base.parameter}`,
-      name: 'Search Music v2',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/search-music-v1.png${base.parameter}`,
-      name: 'Search Music v1',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/emaily.png${base.parameter}`,
-      name: 'Emaily',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/webpage.png${base.parameter}`,
-      name: 'Emaily',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/gifs-and-stickers.png${base.parameter}`,
-      name: 'Gifs and stickers',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/search-music-v2.png${base.parameter}`,
-      name: 'Search Music v2',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/search-music-v1.png${base.parameter}`,
-      name: 'Search Music v1',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/emaily.png${base.parameter}`,
-      name: 'Emaily',
-      description: '',
-      tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
-    },
-    {
-      image: `${base.url}/webpage.png${base.parameter}`,
-      name: 'Emaily',
+      name: 'Webpage',
       description: '',
       tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
     },
