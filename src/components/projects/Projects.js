@@ -29,7 +29,7 @@ function Projects() {
     },
     {
       image: `${base.url}/webpage.png${base.parameter}`,
-      name: 'Emaily',
+      name: 'Webpage',
       description: '',
       tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux']
     },
