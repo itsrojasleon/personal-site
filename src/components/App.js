@@ -13,7 +13,7 @@ function App() {
       <Fragment>
         <Header />
         <Switch>
-          <Suspense fallback={<h1>LOADING...</h1>}>
+          <Suspense fallback={null}>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/portfolio" component={Portfolio} />

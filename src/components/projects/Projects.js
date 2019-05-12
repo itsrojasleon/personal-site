@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from 'react';
+import Spinner from '../Spinner';
 import { Container, Wrapper } from '../styled-components/projects/projects';
 
 const ProjectDetails = lazy(() => import('./ProjectDetails'));
@@ -48,7 +49,7 @@ function Projects() {
   return (
     <Container>
       <Wrapper>
-        <Suspense fallback={<h1>Loading...</h1>}>
+        <Suspense fallback={<Spinner />}>
           {projects.map(project => (
             <ProjectDetails key={project.name} {...project} />
           ))}
