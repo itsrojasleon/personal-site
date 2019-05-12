@@ -13,9 +13,6 @@ function ProjectDetails(props) {
   return (
     <Container spans={spans}>
       <Img ref={imageEl} src={image} alt={name} />
-      <Content>
-        <div>{name}</div>
-      </Content>
     </Container>
   );
 }
