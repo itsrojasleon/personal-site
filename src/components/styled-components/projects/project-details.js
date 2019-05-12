@@ -24,3 +24,17 @@ export const Content = styled.div`
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 `;
+export const Url = styled.div`
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 13px;
+  &:hover {
+    cursor: pointer;
+  }
+`;
+export const A = styled.a`
+  color: white;
+  font-weight: bolder;
+`;

@@ -3,18 +3,22 @@ import useImage from '../../hooks/useImage';
 import {
   Container,
   Img,
-  Content
+  Content,
+  Url,
+  A
 } from '../styled-components/projects/project-details';
 
 function ProjectDetails(props) {
   const imageEl = useRef(null);
-  const { image, name } = props;
+  const { image, name, url } = props;
   const spans = useImage(imageEl);
   return (
     <Container spans={spans}>
       <Img ref={imageEl} src={image} alt={name} />
       <Content>
-        <div />
+        <Url>
+          <A>{url}</A>
+        </Url>
       </Content>
     </Container>
   );
