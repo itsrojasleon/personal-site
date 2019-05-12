@@ -13,6 +13,9 @@ function ProjectDetails(props) {
   return (
     <Container spans={spans}>
       <Img ref={imageEl} src={image} alt={name} />
+      <Content>
+        <div />
+      </Content>
     </Container>
   );
 }
