@@ -11,14 +11,15 @@ import {
 function ProjectDetails(props) {
   const [show, setShow] = React.useState(false);
   const imageEl = useRef(null);
-  const { image, name, url } = props;
-  const spans = useImage(imageEl);
+  const { image, name, url, i } = props;
+  const spans = useImage(imageEl, i);
   return (
     <Container
       onMouseLeave={() => setShow(false)}
       onMouseEnter={() => setShow(true)}
       spans={spans}>
       <Img ref={imageEl} src={image} alt={name} />
+      {spans}/{i + 1}
       {show && (
         <Content>
           <Url>

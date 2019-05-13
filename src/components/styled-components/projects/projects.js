@@ -10,6 +10,6 @@ export const Wrapper = styled.div`
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));
-  grid-gap: 0 10px;
+  grid-gap: 0.8px 10px;
   grid-auto-rows: 10px;
 `;

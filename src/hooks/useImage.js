@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
-function useImage(imageElement) {
-  const initialState = () => Number(window.localStorage.getItem('spans')) || 0;
+function useImage(imageElement, i) {
+  const initialState = () => window.localStorage.getItem(`spans-${i}`) || 0;
   const [spans, setSpans] = useState(initialState);
   useEffect(() => {
     const image = imageElement.current;
@@ -10,11 +10,11 @@ function useImage(imageElement) {
       setSpans(Math.ceil(image.clientHeight / 10));
     };
     image.addEventListener('load', setLoaded);
-    window.localStorage.setItem('spans', spans);
+    window.localStorage.setItem(`spans-${i}`, spans);
     return () => {
       image.removeEventListener('load', setLoaded);
     };
-  }, [imageElement, spans]);
+  }, [imageElement, spans, i]);
   return spans;
 }
 export default useImage;
