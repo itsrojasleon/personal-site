@@ -1,5 +1,10 @@
 import { useState, useEffect } from 'react';
 
+// I need to save "spans" in localStorage
+// Before that, only works when the user visit /portfolio for first time
+// After that "spans it's already in localStoarge"
+// The value is available for the next time
+
 function useImage(imageElement, i) {
   const initialState = () => window.localStorage.getItem(`spans-${i}`) || 0;
   const [spans, setSpans] = useState(initialState);
