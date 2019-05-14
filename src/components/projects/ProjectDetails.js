@@ -5,6 +5,7 @@ import {
   Img,
   Content,
   Url,
+  Icon,
   A
 } from '../styled-components/projects/project-details';
 
@@ -19,11 +20,13 @@ function ProjectDetails(props) {
       onMouseEnter={() => setShow(true)}
       spans={spans}>
       <Img ref={imageEl} src={image} alt={name} />
-      {spans}/{i + 1}
       {show && (
         <Content>
           <Url>
-            <A>{url}</A>
+	    <Icon className="fas fa-external-link-square-alt" />
+            <A target="_blank" href={`${url}`}>
+              {name}
+            </A>
           </Url>
         </Content>
       )}

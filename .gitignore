@@ -25,3 +25,7 @@ yarn-error.log*
 # Environment
 .vscode
 .netlify
+
+# Unix (Created by VIM)
+*.swp
+*.swo

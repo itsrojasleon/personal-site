@@ -28,13 +28,21 @@ export const Url = styled.div`
   background-color: black;
   position: absolute;
   bottom: 10px;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 13px;
+  opacity: 0.7;
+  transition: 0.3s;
   &:hover {
     cursor: pointer;
+    opacity: 1;
   }
+`;
+export const Icon = styled.i`
+  color: white;
+  margin-right: 5px;
 `;
 export const A = styled.a`
   color: white;
   font-weight: bolder;
+  text-decoration: none;
 `;
