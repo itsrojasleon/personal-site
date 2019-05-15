@@ -7,6 +7,10 @@ const Home = lazy(() => import('../pages/Home'));
 const About = lazy(() => import('../pages/About'));
 const Portfolio = lazy(() => import('../pages/Portfolio'));
 
+const ProjectIndividual = lazy(() =>
+  import('../components/projects/ProjectIndividual')
+);
+
 function App() {
   return (
     <Router>
@@ -16,7 +20,8 @@ function App() {
           <Suspense fallback={null}>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/portfolio" component={Portfolio} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route path="/portfolio/:name" component={ProjectIndividual} />
           </Suspense>
         </Switch>
         <Footer />

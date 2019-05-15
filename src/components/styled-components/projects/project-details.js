@@ -15,6 +15,8 @@ export const Img = styled.img`
   border-radius: 10px;
 `;
 export const Content = styled.div`
+  display: ${props => (props.show ? 'block' : 'none')};
+  cursor: pointer;
   padding: 10px;
   position: absolute;
   top: 0;
