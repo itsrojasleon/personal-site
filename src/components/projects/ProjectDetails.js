@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 import useImage from '../../hooks/useImage';
 import convertString from '../../utils/convertString';
 import {
   Container,
   Img,
   Content,
+  StyledLink,
   Url,
   Icon,
   A
@@ -23,9 +23,9 @@ function ProjectDetails(props) {
       spans={spans}>
       <Img ref={imageEl} src={image} alt={name} />
       <Content show={show}>
-        <Link to={`/portfolio/${convertString(name)}`}>
-          <i className="far fa-eye" />
-        </Link>
+        <StyledLink to={`/portfolio/${convertString(name)}`}>
+          Look <Icon eye className="far fa-eye" />
+        </StyledLink>
         <Url>
           <Icon className="fas fa-external-link-square-alt" />
           <A target="_blank" href={url}>
