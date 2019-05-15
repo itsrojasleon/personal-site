@@ -11,5 +11,8 @@ export const A = styled.a`
   &:hover {
     color: black;
   }
+  @media (max-width: 769px) {
+    margin-top: 15px;
+  }
 `;
 export const I = styled.i``;

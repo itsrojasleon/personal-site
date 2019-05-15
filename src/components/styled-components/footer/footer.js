@@ -15,6 +15,10 @@ export const Wrapper = styled.span`
   margin: auto;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 769px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const LeftSide = styled.span`
   display: flex;
@@ -24,6 +28,9 @@ export const LeftSide = styled.span`
 `;
 export const Name = styled.span`
   margin-bottom: 10px;
+  @media (max-width: 769px) {
+    margin-bottom: 5px;
+  }
 `;
 export const Email = styled.a`
   color: rgb(120, 120, 120);

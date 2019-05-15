@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import useImage from '../../hooks/useImage';
 import convertString from '../../utils/convertString';
+
 import {
   Container,
   Img,
@@ -12,8 +13,8 @@ import {
 } from '../styled-components/projects/project-details';
 
 function ProjectDetails(props) {
-  const [show, setShow] = useState(false);
-  const imageEl = useRef(null);
+  const [show, setShow] = React.useState(false);
+  const imageEl = React.useRef(null);
   const { image, name, url, i } = props;
   const spans = useImage(imageEl, i);
   return (
