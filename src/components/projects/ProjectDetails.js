@@ -22,7 +22,7 @@ function ProjectDetails(props) {
       onMouseLeave={() => setShow(false)}
       onMouseEnter={() => setShow(true)}
       spans={spans}>
-      <Img ref={imageEl} src={image} alt={name} />
+      <Img ref={imageEl} src={image} loading="lazy" alt={name} />
       <Content show={show}>
         <StyledLink to={`/portfolio/${convertString(name)}`}>
           Look <Icon eye className="far fa-eye" />
