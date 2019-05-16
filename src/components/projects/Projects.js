@@ -1,11 +1,18 @@
 import React, { Suspense, lazy } from 'react';
 import Spinner from '../Spinner';
 import { Container, Wrapper } from '../styled-components/projects/projects';
-import projects from '../../utils/api';
+// import { getClients, getClient } from ../../utils/api;
+import { getProjects } from '../../utils/api';
+
+import useFetchResource from '../../hooks/useFetchResource';
 
 const ProjectDetails = lazy(() => import('./ProjectDetails'));
 
 function Projects() {
+  const projects = useFetchResource(getProjects);
+  if (!projects) {
+    return <Spinner />;
+  }
   return (
     <Container>
       <Wrapper>

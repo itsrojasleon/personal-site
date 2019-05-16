@@ -39,4 +39,22 @@ const projects = [
     url: 'https://search-infinite-gifs.surge.sh/'
   }
 ];
-export default projects;
+const handleProjects = () => {
+  return new Promise((res, rej) => {
+    try {
+      setTimeout(() => res(projects), 300);
+    } catch (err) {
+      rej();
+      console.log('Something went wrong', err);
+    }
+  });
+};
+const getProjects = async () => {
+  return await handleProjects();
+};
+const getProject = async name => {
+  const response = await handleProjects();
+  return response.filter(n => n === name);
+};
+
+export { getProjects, getProject };
