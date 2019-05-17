@@ -1,7 +1,8 @@
 import React from 'react';
-import { SocialMedia } from '../styles/footer';
+import FooterIconDetails from './FooterIconDetails';
+import { Container } from '../styled-components/footer/footer-icons';
 
-function SocialItems() {
+function FooterIcons() {
   const socialMedia = [
     {
       id: 'github',
@@ -20,17 +21,11 @@ function SocialItems() {
     }
   ];
   return (
-    <>
-      {socialMedia.map(social => (
-        <SocialMedia
-        key={social.id}
-          target="_blank"
-          rel="noopener noreferrer"
-          href={`${social.url}`}>
-          <i className={`${social.icon}`} />
-        </SocialMedia>
+    <Container>
+      {socialMedia.map(el => (
+        <FooterIconDetails key={el.id} {...el} />
       ))}
-    </>
+    </Container>
   );
 }
-export default SocialItems;
+export default FooterIcons;

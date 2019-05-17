@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import useDocumentTitle from '../hooks/useDocumentTitle';
 
-class About extends Component {
-  render() {
-    return (
-      <div>Coming soon</div>
-    );
-  }
+function About() {
+  useDocumentTitle('About me');
+  return <div>I'm working on this...</div>;
 }
 export default About;
