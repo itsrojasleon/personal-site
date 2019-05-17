@@ -19,47 +19,30 @@ export const Card = styled.div`
 `;
 export const Content = styled.div`
   display: flex;
-  background-color: white;
-  cursor: pointer;
-  padding: 20px 10px 20px 10px;
-  border-radius: 10px;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+`;
+export const Name = styled.span`
+  font-size: 17px;
+  font-weight: 600;
 `;
 export const StyledLink = styled(Link)`
-  color: white;
-  font-size: 18px;
-  padding: 6px 12px;
-  background: black;
-  border-radius: 6px;
-  text-align: center;
-  width: 100%;
-  opacity: 0.7;
-  transition: 0.3s;
+  width: auto;
+  color: black;
   text-decoration: none;
-  font-weight: bolder;
-  &:hover {
-    cursor: pointer;
-    opacity: 1;
-  }
 `;
-export const Url = styled.div`
-  background-color: black;
-  padding: 6px 12px;
-  border-radius: 13px;
-  opacity: 0.7;
-  transition: 0.3s;
+export const StyledLinkExternal = styled.a`
+  width: auto;
+  background: black;
+  border-radius: 50%;
+  padding: 7px;
+  transition: 0.2s;
   &:hover {
-    cursor: pointer;
-    opacity: 1;
+    transform: scale(1.08);
   }
 `;
 export const Icon = styled.i`
   color: white;
-  margin-right: 5px;
-`;
-export const A = styled.a`
-  color: white;
-  font-weight: bolder;
-  text-decoration: none;
+  font-size: 15px;
 `;

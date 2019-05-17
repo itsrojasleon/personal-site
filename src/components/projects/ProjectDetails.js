@@ -7,10 +7,10 @@ import {
   Container,
   Img,
   Content,
+  Name,
+  StyledLinkExternal,
   StyledLink,
-  Url,
-  Icon,
-  A
+  Icon
 } from '../styled-components/projects/project-details';
 
 function ProjectDetails(props) {
@@ -19,10 +19,19 @@ function ProjectDetails(props) {
   return (
     <Container>
       <Card>
-        <Img ref={imageEl} src={image} loading="lazy" alt={name} />
+        <StyledLink to={`/portfolio/${convertString(name)}`}>
+          <Img ref={imageEl} src={image} loading="lazy" alt={name} />
+        </StyledLink>
         <Content>
-          <span>{name}</span>
-          <span>{url}</span>
+          <StyledLink to={`/portfolio/${convertString(name)}`}>
+            <Name>{name}</Name>
+          </StyledLink>
+          <StyledLinkExternal target="_blank" href={`${url}`}>
+            <Icon className="fas fa-external-link-alt" />
+          </StyledLinkExternal>
+          {/* <StyledLink to={`/portfolio/${convertString(name)}`}>
+            <Icon className="fas fa-external-link-alt" />
+          </StyledLink> */}
         </Content>
       </Card>
       {/* <Content show={show}>
