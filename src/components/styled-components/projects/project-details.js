@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 export const Container = styled.div`
   padding: 10px;
   transition: 0.2s;
+  border: 1px solid rgb(245, 245, 245);
+  margin: 10px 0px 0px 0px;
+  &:hover {
+    box-shadow: 0 11px 15px 0 rgba(18, 17, 13, 0.1);
+  }
 `;
 export const Img = styled.img`
   width: 100%;
@@ -11,11 +16,6 @@ export const Img = styled.img`
   padding: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-`;
-export const Card = styled.div`
-  border-radius: 5px;
-  box-shadow: 0 11px 15px 0 rgba(18, 17, 13, 0.1);
-  border: 1px solid rgb(240, 240, 240);
 `;
 export const Content = styled.div`
   display: flex;
