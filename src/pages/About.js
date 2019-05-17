@@ -3,6 +3,6 @@ import useDocumentTitle from '../hooks/useDocumentTitle';
 
 function About() {
   useDocumentTitle('About me');
-  return <div>About component</div>;
+  return <div>I'm working on this...</div>;
 }
 export default About;

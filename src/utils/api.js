@@ -11,32 +11,18 @@ const projects = [
     url: 'https://search-music.herokuapp.com/'
   },
   {
-    image: `${base.url}/search-music-v2.png${base.parameter}`,
-    name: 'Search Music v2',
+    image: `${base.url}/search-music-v1.png${base.parameter}`,
+    name: 'Search Music v1',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://search-music.herokuapp.com/'
+    url: 'https://rojasleon.github.com/search-music'
   },
   {
-    image: `${base.url}/search-music-v2.png${base.parameter}`,
-    name: 'Search Music v2',
+    image: `${base.url}/emaily.png${base.parameter}`,
+    name: 'Emaily',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://search-music.herokuapp.com/'
-  },
-  {
-    image: `${base.url}/search-music-v2.png${base.parameter}`,
-    name: 'Search Music v2',
-    description: '',
-    tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://search-music.herokuapp.com/'
-  },
-  {
-    image: `${base.url}/search-music-v2.png${base.parameter}`,
-    name: 'Search Music v2',
-    description: '',
-    tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://search-music.herokuapp.com/'
+    url: 'https://server-with-node.herokuapp.com/'
   }
 ];
 const handleProjects = () => {
