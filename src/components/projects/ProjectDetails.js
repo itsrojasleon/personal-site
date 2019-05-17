@@ -1,5 +1,6 @@
 import React from 'react';
-import useImage from '../../hooks/useImage';
+// import useImage from '../../hooks/useImage';
+import { Card } from '../styled-components/projects/project-details';
 import convertString from '../../utils/convertString';
 
 import {
@@ -13,17 +14,18 @@ import {
 } from '../styled-components/projects/project-details';
 
 function ProjectDetails(props) {
-  const [show, setShow] = React.useState(false);
   const imageEl = React.useRef(null);
   const { image, name, url, i } = props;
-  const spans = useImage(imageEl, i);
   return (
-    <Container
-      onMouseLeave={() => setShow(false)}
-      onMouseEnter={() => setShow(true)}
-      spans={spans}>
-      <Img ref={imageEl} src={image} loading="lazy" alt={name} />
-      <Content show={show}>
+    <Container>
+      <Card>
+        <Img ref={imageEl} src={image} loading="lazy" alt={name} />
+        <Content>
+          <span>{name}</span>
+          <span>{url}</span>
+        </Content>
+      </Card>
+      {/* <Content show={show}>
         <StyledLink to={`/portfolio/${convertString(name)}`}>
           Look <Icon eye className="far fa-eye" />
         </StyledLink>
@@ -33,7 +35,7 @@ function ProjectDetails(props) {
             {name}
           </A>
         </Url>
-      </Content>
+      </Content> */}
     </Container>
   );
 }

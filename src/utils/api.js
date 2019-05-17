@@ -11,32 +11,32 @@ const projects = [
     url: 'https://search-music.herokuapp.com/'
   },
   {
-    image: `${base.url}/search-music-v1.png${base.parameter}`,
-    name: 'Search Music v1',
+    image: `${base.url}/search-music-v2.png${base.parameter}`,
+    name: 'Search Music v2',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://rojasleon.github.io/search-music/'
+    url: 'https://search-music.herokuapp.com/'
   },
   {
-    image: `${base.url}/emaily.png${base.parameter}`,
-    name: 'Emaily',
+    image: `${base.url}/search-music-v2.png${base.parameter}`,
+    name: 'Search Music v2',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://server-with-node.herokuapp.com/'
+    url: 'https://search-music.herokuapp.com/'
   },
   {
-    image: `${base.url}/webpage.png${base.parameter}`,
-    name: 'Webpage',
+    image: `${base.url}/search-music-v2.png${base.parameter}`,
+    name: 'Search Music v2',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://webpage.now.sh'
+    url: 'https://search-music.herokuapp.com/'
   },
   {
-    image: `${base.url}/gifs-and-stickers.png${base.parameter}`,
-    name: 'Gifs and stickers',
+    image: `${base.url}/search-music-v2.png${base.parameter}`,
+    name: 'Search Music v2',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://search-infinite-gifs.surge.sh/'
+    url: 'https://search-music.herokuapp.com/'
   }
 ];
 const handleProjects = () => {

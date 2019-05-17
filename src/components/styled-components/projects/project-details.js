@@ -2,33 +2,29 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  background-color: white;
   padding: 10px;
   transition: 0.2s;
-  position: relative;
-  grid-row-end: ${props => props.spans && `span ${props.spans}`};
 `;
 export const Img = styled.img`
   width: 100%;
   max-width: 100%;
   padding: 0;
-  grid-row-end: 2;
-  border-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+`;
+export const Card = styled.div`
+  border-radius: 5px;
+  box-shadow: 0 11px 15px 0 rgba(18, 17, 13, 0.1);
+  border: 1px solid rgb(240, 240, 240);
 `;
 export const Content = styled.div`
-  display: ${props => (props.show ? 'flex' : 'none')};
+  display: flex;
+  background-color: white;
   cursor: pointer;
-  padding: 10px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 10px 20px 10px;
   border-radius: 10px;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 `;
 export const StyledLink = styled(Link)`
   color: white;
