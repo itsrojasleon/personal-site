@@ -14,7 +14,7 @@ import {
 
 function ProjectDetails(props) {
   const imageEl = React.useRef(null);
-  const { image, name, url, i } = props;
+  const { image, name, url } = props;
   return (
     <Container>
       <StyledLink to={`/portfolio/${convertString(name)}`}>
