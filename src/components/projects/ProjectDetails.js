@@ -1,5 +1,4 @@
 import React from 'react';
-// import useImage from '../../hooks/useImage';
 import convertString from '../../utils/convertString';
 
 import {

@@ -1,14 +1,19 @@
 import { useState, useEffect } from 'react';
 
-function useFetchResource(resource) {
+function useFetchResource(resource, param) {
   const [data, setData] = useState();
 
   useEffect(() => {
     (async function fetchResource() {
-      const value = await resource();
-      setData(value);
+      if (!param) {
+        const value = await resource();
+        setData(value);
+      } else {
+        const value = await resource(param);
+        setData(value);
+      }
     })();
-  }, [resource]);
+  }, [resource, param]);
   return data;
 }
 export default useFetchResource;

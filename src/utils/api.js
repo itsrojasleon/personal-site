@@ -1,3 +1,5 @@
+import convertString from './convertString';
+
 const base = {
   url: 'https://github.com/rojasleon/personal-site-statics/blob/master/png/',
   parameter: '?raw=true'
@@ -40,7 +42,7 @@ const getProjects = async () => {
 };
 const getProject = async name => {
   const response = await handleProjects();
-  return response.filter(n => n === name);
+  return response.filter(n => convertString(n.name) === name);
 };
 
 export { getProjects, getProject };
