@@ -30,10 +30,13 @@ const projects = [
 const handleProjects = () => {
   return new Promise((res, rej) => {
     try {
-      setTimeout(() => res(projects), 300);
+      res(projects);
     } catch (err) {
       rej();
-      console.log('Something went wrong', err);
+      console.group();
+      console.log('Something went wrong');
+      console.log(err.message || err);
+      console.groupEnd();
     }
   });
 };
