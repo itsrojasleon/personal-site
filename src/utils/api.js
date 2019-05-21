@@ -42,7 +42,8 @@ const getProjects = async () => {
 };
 const getProject = async name => {
   const response = await handleProjects();
-  return response.filter(n => convertString(n.name) === name);
+  const result = response.filter(n => convertString(n.name) === name);
+  return result[0];
 };
 
 export { getProjects, getProject };

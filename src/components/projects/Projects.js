@@ -9,18 +9,19 @@ import useFetchResource from '../../hooks/useFetchResource';
 const ProjectDetails = lazy(() => import('./ProjectDetails'));
 
 function Projects() {
-  const projects = useFetchResource(getProjects);
-  if (!projects) {
-    return <Spinner />;
-  }
+  const { data, isLoading, isError } = useFetchResource(getProjects);
   return (
     <Container>
       <Wrapper>
-        <Suspense fallback={<Spinner />}>
-          {projects.map((project, i) => (
-            <ProjectDetails key={project.name} {...project} i={i} />
-          ))}
-        </Suspense>
+        {isLoading && <Spinner />}
+        {!isLoading && (
+          <Suspense fallback={<Spinner />}>
+            {data.map((project, i) => (
+              <ProjectDetails key={project.name} {...project} i={i} />
+            ))}
+          </Suspense>
+        )}
+        {isError && <div>Something went wrong</div>}
       </Wrapper>
     </Container>
   );
