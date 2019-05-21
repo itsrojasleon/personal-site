@@ -4,9 +4,10 @@ import { getProject } from '../../utils/api';
 import useFetchResource from '../../hooks/useFetchResource';
 import {
   Container,
+  Img,
   Name,
-  Ul,
-  Li
+  List,
+  Element
 } from '../styled-components/projects/project-individual';
 
 function ProjectIndividual(props) {
@@ -18,13 +19,13 @@ function ProjectIndividual(props) {
       {isLoading && <Spinner />}
       {!isLoading && (
         <Fragment>
-          <img width="50%" loading="lazy" src={data.image} alt={data.name} />
+          <Img loading="lazy" src={data.image} alt={data.name} />
           <Name>{data.name}</Name>
-          <Ul>
+          <List>
             {data.tecnologies.map((tech, i) => (
-              <Li key={i}>{tech}</Li>
+              <Element key={i}>{tech}</Element>
             ))}
-          </Ul>
+          </List>
         </Fragment>
       )}
       {isError && <div>Something went wrong</div>}
