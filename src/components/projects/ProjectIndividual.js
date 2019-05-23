@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Spinner from '../Spinner';
 import { getProject } from '../../utils/api';
 import useFetchResource from '../../hooks/useFetchResource';
+import useDocumentTitle from '../../hooks/useDocumentTitle';
 import {
   Container,
   ImagesContainer,
@@ -13,6 +14,7 @@ import {
 
 function ProjectIndividual(props) {
   const idName = props.match.params.name;
+  useDocumentTitle(idName);
   const { data, isLoading, isError } = useFetchResource(getProject, idName);
 
   return (
@@ -22,7 +24,13 @@ function ProjectIndividual(props) {
         <Fragment>
           <ImagesContainer>
             {data.images.map((image, i) => (
-              <Img key={i} loading="lazy" src={image} alt={i} />
+              <Img
+                small={i === 0 || (i === 1 && true)}
+                key={i}
+                loading="lazy"
+                src={image}
+                alt={i}
+              />
             ))}
           </ImagesContainer>
           <Name>{data.name}</Name>

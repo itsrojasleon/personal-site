@@ -12,12 +12,11 @@ import {
 } from '../styled-components/projects/project-details';
 
 function ProjectDetails(props) {
-  const imageEl = React.useRef(null);
   const { image, name, url } = props;
   return (
     <Container>
       <StyledLink to={`/portfolio/${convertString(name)}`}>
-        <Img ref={imageEl} src={image} loading="lazy" alt={name} />
+        <Img src={image} loading="lazy" alt={name} />
       </StyledLink>
       <Content>
         <StyledLink to={`/portfolio/${convertString(name)}`}>

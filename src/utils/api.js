@@ -38,8 +38,8 @@ const projects = [
     images: [
       `${imageBase}/gifs-and-stickers/1.png`,
       `${imageBase}/gifs-and-stickers/2.png`,
-      `${imageBase}/gifs-and-stickers/3.png`,
-      `${imageBase}/gifs-and-stickers/4.png`
+      `${imageBase}/gifs-and-stickers/1.png`,
+      `${imageBase}/gifs-and-stickers/2.png`
     ]
   }
 ];
