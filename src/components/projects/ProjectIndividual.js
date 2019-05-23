@@ -4,6 +4,7 @@ import { getProject } from '../../utils/api';
 import useFetchResource from '../../hooks/useFetchResource';
 import {
   Container,
+  ImagesContainer,
   Img,
   Name,
   List,
@@ -19,7 +20,11 @@ function ProjectIndividual(props) {
       {isLoading && <Spinner />}
       {!isLoading && (
         <Fragment>
-          <Img loading="lazy" src={data.image} alt={data.name} />
+          <ImagesContainer>
+            {data.images.map((image, i) => (
+              <Img key={i} loading="lazy" src={image} alt={i} />
+            ))}
+          </ImagesContainer>
           <Name>{data.name}</Name>
           <List>
             {data.tecnologies.map((tech, i) => (
