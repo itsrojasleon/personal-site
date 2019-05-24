@@ -5,9 +5,11 @@ import useFetchResource from '../../hooks/useFetchResource';
 import useDocumentTitle from '../../hooks/useDocumentTitle';
 import {
   Container,
-  ImagesContainer,
+  ImageContainer,
   Img,
+  Wrapper,
   Name,
+  Go,
   List,
   Element
 } from '../styled-components/projects/project-individual';
@@ -22,18 +24,18 @@ function ProjectIndividual(props) {
       {isLoading && <Spinner />}
       {!isLoading && (
         <Fragment>
-          <ImagesContainer>
-            {data.images.map((image, i) => (
-              <Img
-                small={i === 0 || (i === 1 && true)}
-                key={i}
-                loading="lazy"
-                src={image}
-                alt={i}
-              />
-            ))}
-          </ImagesContainer>
-          <Name>{data.name}</Name>
+          <ImageContainer>
+            <Img
+              key={data.name}
+              loading="lazy"
+              src={data.image}
+              alt={data.name}
+            />
+          </ImageContainer>
+          <Wrapper>
+            <Name>{data.name}</Name>
+            <Go href={data.url}>Visit website</Go>
+          </Wrapper>
           <List>
             {data.tecnologies.map((tech, i) => (
               <Element key={i}>{tech}</Element>

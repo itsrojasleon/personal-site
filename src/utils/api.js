@@ -1,8 +1,5 @@
 import convertString from './convertString';
 
-const imageBase =
-  'https://raw.githubusercontent.com/rojasleon/personal-site-statics/master/png';
-
 const base = {
   url: 'https://github.com/rojasleon/personal-site-statics/blob/master/png/',
   parameter: '?raw=true'
@@ -34,13 +31,7 @@ const projects = [
     name: 'Gifs and Stickers',
     description: '',
     tecnologies: ['React', 'Redux'],
-    url: 'https://search-infinite-gifs.surge.sh/',
-    images: [
-      `${imageBase}/gifs-and-stickers/1.png`,
-      `${imageBase}/gifs-and-stickers/2.png`,
-      `${imageBase}/gifs-and-stickers/1.png`,
-      `${imageBase}/gifs-and-stickers/2.png`
-    ]
+    url: 'https://search-infinite-gifs.surge.sh/'
   }
 ];
 const handleProjects = () => {

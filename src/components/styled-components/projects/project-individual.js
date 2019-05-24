@@ -12,26 +12,33 @@ export const Container = styled.div`
     width: 90%;
   }
 `;
-export const ImagesContainer = styled.div`
+export const ImageContainer = styled.div`
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  grid-gap: 20px;
+  display: flex;
 `;
 export const Img = styled.img`
-  width: 100%;
+  width: 80%;
   border: 1px solid rgb(230, 230, 230);
   border-radius: 5px;
   padding: 5px;
+  margin: auto;
   @media (max-width: 769px) {
-    width: 75%;
-    margin: auto;
+    width: 100%;
   }
+`;
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 export const Name = styled.span`
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 10px;
+`;
+export const Go = styled.a`
+  text-decoration: none;
+  color: black;
 `;
 export const List = styled.div`
   display: flex;
