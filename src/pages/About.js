@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import useDocumentTitle from '../hooks/useDocumentTitle';
+import WhoIAm from '../components/whoIAm/WhoIAm';
 
 function About() {
   useDocumentTitle('About me');
-  return <div>I'm working on this...</div>;
+  return (
+    <Fragment>
+      <WhoIAm />
+    </Fragment>
+  );
 }
 export default About;
