@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Container,
+  Dash,
   Text,
   Social
 } from '../styled-components/introduction/introduction-details';
@@ -9,7 +10,9 @@ function IntroductionDetails() {
   return (
     <Container>
       <Text>
-        <p>I'm a software developer.</p>
+        <p>
+          <Dash>-</Dash>Hi, I'm a software developer.
+        </p>
         <p>
           Please visit my
           <Social

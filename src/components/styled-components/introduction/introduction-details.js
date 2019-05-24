@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
   margin-top: 40px;
 `;
+export const Dash = styled.span`
+  color: rgb(50, 158, 255);
+  font-weight: bolder;
+`;
 export const Text = styled.span`
   font-size: 27px;
   font-weight: 200;
