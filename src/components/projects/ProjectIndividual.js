@@ -34,7 +34,9 @@ function ProjectIndividual(props) {
           </ImageContainer>
           <Wrapper>
             <Name>{data.name}</Name>
-            <Go href={data.url}>Visit website</Go>
+            <Go target="_blank" href={data.url}>
+              Visit project
+            </Go>
           </Wrapper>
           <List>
             {data.tecnologies.map((tech, i) => (

@@ -18,8 +18,7 @@ export const ImageContainer = styled.div`
 `;
 export const Img = styled.img`
   width: 80%;
-  border: 1px solid rgb(230, 230, 230);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 5px;
   margin: auto;
   @media (max-width: 769px) {
@@ -35,10 +34,12 @@ export const Name = styled.span`
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: 18px;
 `;
 export const Go = styled.a`
   text-decoration: none;
   color: black;
+  font-size: 18px;
 `;
 export const List = styled.div`
   display: flex;

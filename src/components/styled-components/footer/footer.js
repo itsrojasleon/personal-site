@@ -37,6 +37,6 @@ export const Email = styled.a`
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-    color: rgb(60, 60, 60);
+    color: rgb(30, 30, 30);
   }
 `;
