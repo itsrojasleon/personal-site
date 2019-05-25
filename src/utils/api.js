@@ -1,33 +1,30 @@
 import convertString from './convertString';
 
-const base = {
-  url: 'https://github.com/rojasleon/personal-site-statics/blob/master/png/',
-  parameter: '?raw=true'
-};
+const base = { url: 'https://i.imgur.com' };
 const projects = [
   {
-    image: `${base.url}/search-music-v2.png${base.parameter}`,
+    image: `${base.url}/AEIC0FX.png`,
     name: 'Search Music v2',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
     url: 'https://search-music.herokuapp.com/'
   },
   {
-    image: `${base.url}/search-music-v1.png${base.parameter}`,
+    image: `${base.url}/RTtpQWK.png`,
     name: 'Search Music v1',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
     url: 'https://rojasleon.github.com/search-music'
   },
   {
-    image: `${base.url}/emaily.png${base.parameter}`,
+    image: `${base.url}/djOtu2N.png`,
     name: 'Emaily',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
     url: 'https://server-with-node.herokuapp.com/'
   },
   {
-    image: `${base.url}/gifs-and-stickers.png${base.parameter}`,
+    image: `${base.url}/b7lglYS.png`,
     name: 'Gifs and Stickers',
     description: '',
     tecnologies: ['React', 'Redux'],
