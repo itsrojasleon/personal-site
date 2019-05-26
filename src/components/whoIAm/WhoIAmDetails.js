@@ -7,7 +7,7 @@ import {
 function WhoIAmDetails() {
   return (
     <Container>
-      <Description>My name's Luis Rojas (I'm working on this)</Description>
+      <Description>My name's Luis Rojas </Description>
     </Container>
   );
 }
