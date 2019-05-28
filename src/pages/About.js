@@ -3,7 +3,7 @@ import useDocumentTitle from '../hooks/useDocumentTitle';
 import WhoIAm from '../components/whoIAm/WhoIAm';
 
 function About() {
-  useDocumentTitle('About me');
+  useDocumentTitle('About | Rojas León');
   return (
     <Fragment>
       <WhoIAm />
