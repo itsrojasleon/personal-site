@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   Container,
-  Description
+  Description,
+  Blue
 } from '../styled-components/whoIAm/who-i-am-details';
 
 function WhoIAmDetails() {
@@ -13,9 +14,11 @@ function WhoIAmDetails() {
         programming, after that I knew what my life purpose was going to be.
       </Description>
       <Description>
-        I love using technologies like React (especially with Hooks), Redux,
-        Node and React Native in my projects (Yes! I love Javascript); but I
-        also have some experience with languages like Dart and Typescript.
+        I love using technologies like <Blue>React</Blue> (especially with
+        Hooks), <Blue>Redux</Blue>,<Blue>Node</Blue> and{' '}
+        <Blue>React Native</Blue> in my projects (Yes! I love{' '}
+        <Blue>Javascript</Blue>); but I also have some experience with languages
+        like <Blue>Dart</Blue> and <Blue>Typescript</Blue>.
       </Description>
     </Container>
   );
