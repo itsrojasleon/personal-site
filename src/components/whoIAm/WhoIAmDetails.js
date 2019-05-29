@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Container,
   Description,
-  Blue
+  Blue,
 } from '../styled-components/whoIAm/who-i-am-details';
 
 function WhoIAmDetails() {
@@ -15,7 +15,7 @@ function WhoIAmDetails() {
       </Description>
       <Description>
         I love using technologies like <Blue>React</Blue> (especially with
-        Hooks), <Blue>Redux</Blue>,<Blue>Node</Blue> and{' '}
+        Hooks), <Blue>Redux</Blue>,<Blue> Node</Blue> and{' '}
         <Blue>React Native</Blue> in my projects (Yes! I love{' '}
         <Blue>Javascript</Blue>); but I also have some experience with languages
         like <Blue>Dart</Blue> and <Blue>Typescript</Blue>.
