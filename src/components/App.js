@@ -8,7 +8,7 @@ const About = lazy(() => import('../pages/About'));
 const Portfolio = lazy(() => import('../pages/Portfolio'));
 
 const ProjectIndividual = lazy(() =>
-  import('../components/projects/ProjectIndividual')
+  import('../components/projects/ProjectIndividual'),
 );
 
 function App() {
