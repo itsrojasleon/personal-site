@@ -14,7 +14,7 @@ const projects = [
     name: 'Search Music v1',
     description: '',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://rojasleon.github.com/search-music',
+    url: 'https://rojasleon.github.io/search-music',
   },
   {
     image: `${base.url}/djOtu2N.png`,
