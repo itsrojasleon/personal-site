@@ -35,6 +35,9 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 `;
+export const Icons = styled.span`
+  display: flex;
+`;
 export const Description = styled.span`
   color: rgb(20, 20, 20);
   font-weight: lighter;
@@ -50,6 +53,7 @@ export const Icon = styled.div`
   border: 1px solid rgb(230, 230, 230);
   border-radius: 50%;
   padding: 10px;
+  margin-right: 10px;
 `;
 export const Go = styled.a`
   text-decoration: none;

@@ -15,7 +15,8 @@ const projects = [
     name: 'Search Music v1',
     description: 'Search your favorite song by Spotify API (v1).',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://github.com/rojasleon/search-music/tree/gh-pages',
+    url: 'https://rojasleon.github.io/search-music/',
+    repo: 'https://github.com/rojasleon/search-music/tree/gh-pages',
   },
   {
     image: `${base.url}/djOtu2N.png`,
@@ -23,6 +24,7 @@ const projects = [
     description: 'Send emails to people of your interest.',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
     url: 'https://server-with-node.herokuapp.com/',
+    repo: 'https://github.com/rojasleon/emaily',
   },
   {
     image: `${base.url}/b7lglYS.png`,
@@ -31,7 +33,7 @@ const projects = [
       'Search your favorite gifs and stickers and have fun in the process.',
     tecnologies: ['React', 'Redux'],
     url: 'https://search-infinite-gifs.surge.sh/',
-    repo: 'https://github.com/rojasleon/emaily',
+    repo: 'https://github.com/rojasleon/search-infinite-gifs',
   },
   {
     image: `${base.url}/orU0T50.png`,

@@ -10,6 +10,7 @@ import {
   Content,
   Wrapper,
   Description,
+  Icons,
   Name,
   Icon,
   Go,
@@ -38,11 +39,18 @@ function ProjectIndividual(props) {
           <Content>
             <Wrapper>
               <Name>{data.name}</Name>
-              <Go target="_blank" href={data.url}>
-                <Icon>
-                  <i className="fas fa-info-circle" />
-                </Icon>
-              </Go>
+              <Icons>
+                <Go target="_blank" href={data.repo}>
+                  <Icon>
+                    <i className="fab fa-github" />
+                  </Icon>
+                </Go>
+                <Go target="_blank" href={data.url}>
+                  <Icon>
+                    <i className="fas fa-info-circle" />
+                  </Icon>
+                </Go>
+              </Icons>
             </Wrapper>
             <Description>{data.description}</Description>
           </Content>
