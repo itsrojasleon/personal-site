@@ -9,9 +9,10 @@ import {
   Img,
   Wrapper,
   Name,
+  Icon,
   Go,
   List,
-  Element
+  Element,
 } from '../styled-components/projects/project-individual';
 
 function ProjectIndividual(props) {
@@ -35,7 +36,9 @@ function ProjectIndividual(props) {
           <Wrapper>
             <Name>{data.name}</Name>
             <Go target="_blank" href={data.url}>
-              Visit project
+              <Icon>
+                <i className="fas fa-info-circle" />
+              </Icon>
             </Go>
           </Wrapper>
           <List>
