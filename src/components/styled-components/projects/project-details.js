@@ -34,15 +34,16 @@ export const StyledLink = styled(Link)`
 `;
 export const StyledLinkExternal = styled.a`
   width: auto;
-  background: black;
   border-radius: 50%;
+  border: 1px solid rgb(235, 235, 235);
   padding: 7px;
   transition: 0.2s;
-  &:hover {
-    transform: scale(1.08);
-  }
 `;
 export const Icon = styled.i`
-  color: white;
+  color: black;
   font-size: 15px;
+  transition: 0.2s;
+  &:hover {
+    color: rgb(50, 158, 255);
+  }
 `;

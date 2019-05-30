@@ -29,6 +29,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 10px;
 `;
 export const Name = styled.span`
   font-weight: 500;
@@ -36,18 +37,28 @@ export const Name = styled.span`
   margin-bottom: 10px;
   font-size: 18px;
 `;
+export const Icon = styled.div`
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 50%;
+  padding: 10px;
+`;
 export const Go = styled.a`
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 19px;
+  transition: 0.2s;
+  &:hover {
+    color: rgb(50, 158, 255);
+  }
 `;
 export const List = styled.div`
   display: flex;
   align-items: center;
 `;
 export const Element = styled.span`
-  background-color: rgb(240, 240, 240);
-  color: rgb(120, 120, 120);
+  color: #1890ff;
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
   font-weight: lighter;
   border-radius: 10px;
   padding: 5px 10px 5px 10px;

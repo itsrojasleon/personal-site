@@ -8,7 +8,7 @@ import {
   Name,
   StyledLinkExternal,
   StyledLink,
-  Icon
+  Icon,
 } from '../styled-components/projects/project-details';
 
 function ProjectDetails(props) {
