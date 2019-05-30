@@ -64,7 +64,5 @@ export const Element = styled.span`
   padding: 5px 10px 5px 10px;
   margin-right: 10px;
   transition: 0.2s;
-  &:hover {
-    transform: scale(1.05);
-  }
+  font-size: 15px;
 `;
