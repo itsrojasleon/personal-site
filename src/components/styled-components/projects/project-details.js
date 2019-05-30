@@ -38,6 +38,7 @@ export const StyledLinkExternal = styled.a`
   border: 1px solid rgb(235, 235, 235);
   padding: 7px;
   transition: 0.2s;
+  margin-right: 4px;
 `;
 export const Icon = styled.i`
   color: black;

@@ -12,7 +12,7 @@ import {
 } from '../styled-components/projects/project-details';
 
 function ProjectDetails(props) {
-  const { image, name, url } = props;
+  const { image, name, url, repo } = props;
   return (
     <Container>
       <StyledLink to={`/portfolio/${convertString(name)}`}>
@@ -22,9 +22,14 @@ function ProjectDetails(props) {
         <StyledLink to={`/portfolio/${convertString(name)}`}>
           <Name>{name}</Name>
         </StyledLink>
-        <StyledLinkExternal target="_blank" href={`${url}`}>
-          <Icon className="fas fa-external-link-alt" />
-        </StyledLinkExternal>
+        <span>
+          <StyledLinkExternal target="_blank" href={`${repo}`}>
+            <Icon className="fab fa-github" />
+          </StyledLinkExternal>
+          <StyledLinkExternal target="_blank" href={`${url}`}>
+            <Icon className="fas fa-external-link-alt" />
+          </StyledLinkExternal>
+        </span>
       </Content>
     </Container>
   );

@@ -8,13 +8,14 @@ const projects = [
     description: 'Search your favorite song by Spotify API (v2).',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
     url: 'https://search-music.herokuapp.com/',
+    repo: 'https://github.com/rojasleon/search-music',
   },
   {
     image: `${base.url}/RTtpQWK.png`,
     name: 'Search Music v1',
     description: 'Search your favorite song by Spotify API (v1).',
     tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
-    url: 'https://rojasleon.github.io/search-music',
+    url: 'https://github.com/rojasleon/search-music/tree/gh-pages',
   },
   {
     image: `${base.url}/djOtu2N.png`,
@@ -30,6 +31,7 @@ const projects = [
       'Search your favorite gifs and stickers and have fun in the process.',
     tecnologies: ['React', 'Redux'],
     url: 'https://search-infinite-gifs.surge.sh/',
+    repo: 'https://github.com/rojasleon/emaily',
   },
   {
     image: `${base.url}/orU0T50.png`,
@@ -38,6 +40,7 @@ const projects = [
       'Search your favorite videos by Youtube API (like youtube?... yes, like youtube).',
     tecnologies: ['React', 'Redux', 'Youtube API'],
     url: 'https://search-video.surge.sh/',
+    repo: 'https://github.com/rojasleon/video-search-on-youtube',
   },
 ];
 const handleProjects = () => {
