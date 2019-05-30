@@ -7,7 +7,9 @@ import {
   Container,
   ImageContainer,
   Img,
+  Content,
   Wrapper,
+  Description,
   Name,
   Icon,
   Go,
@@ -33,14 +35,17 @@ function ProjectIndividual(props) {
               alt={data.name}
             />
           </ImageContainer>
-          <Wrapper>
-            <Name>{data.name}</Name>
-            <Go target="_blank" href={data.url}>
-              <Icon>
-                <i className="fas fa-info-circle" />
-              </Icon>
-            </Go>
-          </Wrapper>
+          <Content>
+            <Wrapper>
+              <Name>{data.name}</Name>
+              <Go target="_blank" href={data.url}>
+                <Icon>
+                  <i className="fas fa-info-circle" />
+                </Icon>
+              </Go>
+            </Wrapper>
+            <Description>{data.description}</Description>
+          </Content>
           <List>
             {data.tecnologies.map((tech, i) => (
               <Element key={i}>{tech}</Element>

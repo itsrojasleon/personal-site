@@ -25,11 +25,20 @@ export const Img = styled.img`
     width: 100%;
   }
 `;
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+`;
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px;
+`;
+export const Description = styled.span`
+  color: rgb(20, 20, 20);
+  font-weight: lighter;
+  margin-bottom: 10px;
 `;
 export const Name = styled.span`
   font-weight: 500;
