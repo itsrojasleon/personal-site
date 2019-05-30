@@ -26,14 +26,16 @@ const projects = [
   {
     image: `${base.url}/b7lglYS.png`,
     name: 'Gifs and Stickers',
-    description: '',
+    description:
+      'Search your favorite gifs and stickers and have fun in the process.',
     tecnologies: ['React', 'Redux'],
     url: 'https://search-infinite-gifs.surge.sh/',
   },
   {
     image: `${base.url}/orU0T50.png`,
     name: 'Search Video',
-    description: '',
+    description:
+      'Search your favorite videos by Youtube API (like youtube?... yes, like youtube).',
     tecnologies: ['React', 'Redux', 'Youtube API'],
     url: 'https://search-video.surge.sh/',
   },
