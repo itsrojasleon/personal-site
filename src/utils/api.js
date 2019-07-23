@@ -22,7 +22,15 @@ const projects = [
     image: `${base.url}/djOtu2N.png`,
     name: 'Emaily',
     description: 'Send emails to people of your interest.',
-    tecnologies: ['React with Hooks', 'Node', 'MongoDB', 'Redux'],
+    tecnologies: [
+      'React with Hooks',
+      'Node',
+      'MongoDB',
+      'Redux',
+      'Stripe',
+      'Payments',
+      'SendGrid',
+    ],
     url: 'https://server-with-node.herokuapp.com/',
     repo: 'https://github.com/rojasleon/emaily',
   },
@@ -43,6 +51,23 @@ const projects = [
     tecnologies: ['React', 'Redux', 'Youtube API'],
     url: 'https://search-video.surge.sh/',
     repo: 'https://github.com/rojasleon/video-search-on-youtube',
+  },
+  {
+    image: `${base.url}/J4345gK.png`,
+    name: 'The coding Interview Bootcamp',
+    description:
+      'Ace your next Javascript coding interview by mastering data structures and algorithms.',
+    tecnologies: [
+      'React',
+      'Gatsby',
+      'Markdown',
+      'Hooks',
+      'Theme UI',
+      'Data structures',
+      'Coding Interview',
+    ],
+    url: 'https://the-coding-interview-bootcamp.netlify.com/',
+    repo: 'https://github.com/rojasleon/the-coding-interview-bootcamp',
   },
 ];
 const handleProjects = () => {
