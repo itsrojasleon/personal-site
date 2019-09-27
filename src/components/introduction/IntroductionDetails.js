@@ -3,7 +3,7 @@ import {
   Container,
   Dash,
   Text,
-  Social
+  Social,
 } from '../styled-components/introduction/introduction-details';
 
 function IntroductionDetails() {
@@ -18,28 +18,32 @@ function IntroductionDetails() {
           <Social
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/rojasleon">
+            href="https://github.com/rojasleon"
+          >
             Github
           </Social>
           /
           <Social
             target="_blank"
             rel="noopener noreferrer"
-            href="https://repl.it/@rojasleon">
-            Repl
+            href="https://www.codewars.com/users/rojasleon"
+          >
+            Codewars
           </Social>
           /
           <Social
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.codewars.com/users/rojasleon">
-            Codewars
+            href="https://www.hackerrank.com/rojasleon"
+          >
+            Hacker Rank
           </Social>
           or
           <Social
             target="_blank"
             rel="noopener noreferrer"
-            href="https://codesandbox.io/u/rojasleon">
+            href="https://codesandbox.io/u/rojasleon"
+          >
             CodeSandbox
           </Social>
           to see my skills.
