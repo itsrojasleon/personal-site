@@ -23,8 +23,8 @@ const WhoIAmDetails = (): JSX.Element => {
       <br />
       <Description>
         One of my favorites hobbies is to study new languages (
-        <Blue>English, Russian and Chinese</Blue> "at the moment"), you can see
-        my level in two platforms:{' '}
+        <Blue>English and French</Blue> "at the moment"), you can see my level
+        in two platforms:{' '}
         <Blue>
           <a
             style={{ color: 'rgb(50, 158, 255)' }}
