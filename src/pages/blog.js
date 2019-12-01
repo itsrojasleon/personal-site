@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
@@ -22,6 +23,7 @@ const Blog = () => {
 
   return (
     <Layout>
+      <SEO title="Blog" />
       <div>
         {edges.map(e => {
           const { frontmatter } = e.node;
@@ -31,6 +33,7 @@ const Blog = () => {
             </div>
           );
         })}
+        <Link to="/tags">Search by tags</Link>
       </div>
     </Layout>
   );

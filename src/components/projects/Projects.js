@@ -1,5 +1,4 @@
 import React, { Suspense, lazy } from 'react';
-// import Spinner from '../Spinner';
 import { Container, Wrapper } from '../../styles/projects/projects';
 import { getProjects } from '../../api/portfolio';
 import { useFetchResource } from '../../hooks/useFetchResource';

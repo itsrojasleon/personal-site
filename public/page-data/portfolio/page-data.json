@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-portfolio-js","path":"/portfolio/","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{"componentChunkName":"component---src-pages-portfolio-js","path":"/portfolio/","result":{"data":{"allMdx":{"edges":[{"node":{"frontmatter":{"date":null,"path":null,"title":"HELLO MDX"}}},{"node":{"frontmatter":{"date":"2019-11-10T00:00:00.000Z","path":"projects/search-music-v2","title":"Search Music v2"}}}]}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
+import SEO from '../components/seo';
 import Layout from '../components/layout';
 
 const Template = ({ data, pageContext }) => {
@@ -12,6 +13,7 @@ const Template = ({ data, pageContext }) => {
 
   return (
     <Layout>
+      <SEO title="Blog Post" />
       {next && <Link to={next.frontmatter.path}>Next</Link>}
       {prev && <Link to={prev.frontmatter.path}>Prev</Link>}
       <div>{title}</div>
