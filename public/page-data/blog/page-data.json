@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-pages-blog-js","path":"/blog/","result":{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"date":"2019-01-29T00:00:00.000Z","path":"/hello-world","title":"Second"}}},{"node":{"frontmatter":{"date":"2016-01-28T00:00:00.000Z","path":"/hi-there","title":"First"}}}]}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}

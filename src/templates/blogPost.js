@@ -1,0 +1,33 @@
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import Layout from '../components/layout';
+
+const Template = ({ data, pageContext }) => {
+  const {
+    html,
+    frontmatter: { title },
+  } = data.markdownRemark;
+
+  const { next, prev } = pageContext;
+
+  return (
+    <Layout>
+      {next && <Link to={next.frontmatter.path}>Next</Link>}
+      {prev && <Link to={prev.frontmatter.path}>Prev</Link>}
+      <div>{title}</div>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+    </Layout>
+  );
+};
+
+export const query = graphql`
+  query($pathSlug: String!) {
+    markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+`;
+export default Template;
