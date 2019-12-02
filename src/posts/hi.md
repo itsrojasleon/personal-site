@@ -1,6 +1,6 @@
 ---
 title: First
-path: /hi-there
+path: /blog/hi-there
 date: 2016-01-28
 ---
 # aksoasaksoaskoako

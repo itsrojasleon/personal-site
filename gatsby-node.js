@@ -46,45 +46,77 @@ const createTagPages = (createPage, posts) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
-  return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve('src/templates/blogPost.js');
+  const blogPostTemplate = path.resolve('src/templates/blogPost.js');
+  const projectTemplate = path.resolve('src/templates/project.js');
 
-    resolve(
-      graphql(`
-        query {
-          allMarkdownRemark(
-            sort: { order: ASC, fields: [frontmatter___date] }
-          ) {
-            edges {
-              node {
-                frontmatter {
-                  path
-                  title
-                  tags
-                }
-              }
+  const blogs = graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___date] }
+        filter: { frontmatter: { path: { regex: "/blog/" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+              title
+              tags
             }
           }
         }
-      `).then(result => {
-        const posts = result.data.allMarkdownRemark.edges;
+      }
+    }
+  `).then(result => {
+    const posts = result.data.allMarkdownRemark.edges;
 
-        createTagPages(createPage, posts);
+    createTagPages(createPage, posts);
 
-        result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
-          const path = node.frontmatter.path;
-          createPage({
-            path,
-            component: blogPostTemplate,
-            context: {
-              pathSlug: path,
-              prev: index === 0 ? null : posts[index - 1].node,
-              next: index === posts.length - 1 ? null : posts[index + 1].node,
-            },
-          });
-          resolve();
-        });
-      })
-    );
+    posts.forEach(({ node }, index) => {
+      const path = node.frontmatter.path;
+      createPage({
+        path,
+        component: blogPostTemplate,
+        context: {
+          pathSlug: path,
+          prev: index === 0 ? null : posts[index - 1].node,
+          next: index === posts.length - 1 ? null : posts[index + 1].node,
+        },
+      });
+    });
   });
+
+  const projects = graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: ASC, fields: [frontmatter___date] }
+        filter: { frontmatter: { path: { regex: "/portfolio/" } } }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+              title
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    const projectsResponse = result.data.allMarkdownRemark.edges;
+
+    projectsResponse.forEach(({ node }, index) => {
+      const path = node.frontmatter.path;
+      createPage({
+        path,
+        component: projectTemplate,
+        context: {
+          pathSlug: path,
+          // prev: index === 0 ? null : posts[index - 1].node,
+          // next: index === posts.length - 1 ? null : posts[index + 1].node,
+        },
+      });
+    });
+  });
+
+  return Promise.all([blogs, projects]);
 };

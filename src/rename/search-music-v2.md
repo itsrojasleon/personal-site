@@ -1,6 +1,6 @@
 ---
 title: "Search Music v2"
-path: "projects/search-music-v2"
+path: "/portfolio/search-music-v2"
 date: 2019-11-10
 ---
 

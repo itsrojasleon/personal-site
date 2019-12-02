@@ -6,7 +6,10 @@ import SEO from '../components/seo';
 const Blog = () => {
   const data = useStaticQuery(graphql`
     query MyQuery {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { path: { regex: "/blog/" } } }
+      ) {
         edges {
           node {
             frontmatter {

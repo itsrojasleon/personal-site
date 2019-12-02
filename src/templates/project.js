@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 
@@ -9,13 +9,9 @@ const Template = ({ data, pageContext }) => {
     frontmatter: { title },
   } = data.markdownRemark;
 
-  const { next, prev } = pageContext;
-
   return (
     <Layout>
       <SEO title={title} />
-      {next && <Link to={next.frontmatter.path}>Next</Link>}
-      {prev && <Link to={prev.frontmatter.path}>Prev</Link>}
       <div>{title}</div>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>

@@ -1,6 +1,6 @@
 ---
 title: Second
-path: /hello-world
+path: /blog/hello-world
 date: 2019-01-29
 tags: ["hello"]
 ---

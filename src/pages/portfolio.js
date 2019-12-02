@@ -1,13 +1,15 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Projects from '../components/projects/Projects';
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
     query PortfolioQuery {
-      allMdx(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { path: { regex: "/portfolio/" } } }
+      ) {
         edges {
           node {
             frontmatter {
@@ -20,11 +22,24 @@ const Portfolio = () => {
       }
     }
   `);
-  console.log(data);
+  const { edges } = data.allMarkdownRemark;
+
   return (
     <Layout>
       <SEO title="Portfolio" />
-      <Projects />
+      <div>
+        {edges.map(e => {
+          const { frontmatter } = e.node;
+          return (
+            <div key={frontmatter.path}>
+              <Link to={frontmatter.path ? frontmatter.path : '/fuck/mate'}>
+                {frontmatter.title}
+              </Link>
+            </div>
+          );
+        })}
+        {/* <Link to="/tags">Search by tags</Link> */}
+      </div>
     </Layout>
   );
 };

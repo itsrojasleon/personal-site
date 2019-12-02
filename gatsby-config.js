@@ -34,7 +34,6 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
-    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
