@@ -16,6 +16,7 @@ const Portfolio = () => {
               date
               path
               title
+              image
             }
           }
         }
@@ -32,13 +33,13 @@ const Portfolio = () => {
           const { frontmatter } = e.node;
           return (
             <div key={frontmatter.path}>
-              <Link to={frontmatter.path ? frontmatter.path : '/fuck/mate'}>
+              <Link to={frontmatter.path ? frontmatter.path : '/hello/mate'}>
                 {frontmatter.title}
               </Link>
+              <img src={frontmatter.image} alt={frontmatter.title} />
             </div>
           );
         })}
-        {/* <Link to="/tags">Search by tags</Link> */}
       </div>
     </Layout>
   );
