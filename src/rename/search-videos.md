@@ -1,14 +1,16 @@
 ---
-title: "The coding Interview Bootcamp"
-path: "/portfolio/the-coding-interview-bootcamp"
+title: "Search Videos"
+path: "/portfolio/search-videos"
 date: 2019-11-09
-image: "https://i.imgur.com/J4345gK.png"
+image: "https://i.imgur.com/orU0T50.png"
+website: 'https://search-video.surge.sh'
+repo: 'https://github.com/rojasleon/video-search-on-youtube'
 ---
 
 Search your favorite song by Spotify API (v1).
 
 <div align="center">
-  <img src="https://i.imgur.com/J4345gK.png" width="60%" alt="The coding Interview Bootcamp" />
+  <img src="https://i.imgur.com/orU0T50.png" width="60%" alt="Search Videos" />
 </div>
 
 

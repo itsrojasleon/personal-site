@@ -18,6 +18,8 @@ const Portfolio = () => {
               path
               title
               image
+              website
+              github
             }
           }
         }
