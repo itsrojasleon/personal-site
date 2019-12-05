@@ -225,22 +225,13 @@ pre[class*="language-"] {
   min-width: 100%; /* 2 */
 }
 
-.container {
-  min-height: 100vh; /* will cover the 100% of viewport */
-  overflow: hidden;
-  display: block;
-  position: relative;
-  padding-bottom: 100px; /* height of your footer */
-}
 main {
+  width: 100%;
+  background-color: rgb(240,241,243);
+}
+main > div {
   width: 80%;
   margin: auto;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 html {
@@ -251,6 +242,7 @@ html {
 }
 body {
   margin: 0;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -469,7 +461,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
 }
 h1 {
   margin-left: 0;

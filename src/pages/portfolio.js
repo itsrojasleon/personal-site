@@ -1,7 +1,8 @@
 import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Projects from '../components/projects';
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -29,17 +30,7 @@ const Portfolio = () => {
     <Layout>
       <SEO title="Portfolio" />
       <div>
-        {edges.map(e => {
-          const { frontmatter } = e.node;
-          return (
-            <div key={frontmatter.path}>
-              <Link to={frontmatter.path ? frontmatter.path : '/hello/mate'}>
-                {frontmatter.title}
-              </Link>
-              <img src={frontmatter.image} alt={frontmatter.title} />
-            </div>
-          );
-        })}
+        <Projects projects={edges} />
       </div>
     </Layout>
   );
