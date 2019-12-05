@@ -17,7 +17,7 @@ export const Container = styled.div`
   }
   & > div a > h4 {
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   & > div > a > img {
     border-radius: 5px;

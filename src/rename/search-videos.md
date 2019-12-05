@@ -4,7 +4,7 @@ path: "/portfolio/search-videos"
 date: 2019-11-09
 image: "https://i.imgur.com/orU0T50.png"
 website: 'https://search-video.surge.sh'
-repo: 'https://github.com/rojasleon/video-search-on-youtube'
+github: 'https://github.com/rojasleon/video-search-on-youtube'
 ---
 
 Search your favorite song by Spotify API (v1).

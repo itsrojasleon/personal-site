@@ -7,10 +7,9 @@ export const Wrapper = styled.footer`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  /* position: absolute; */
-  /* bottom: 0; */
   width: 100%;
-  background-color: white;
+  background-color: ${props => (props.isWhite ? 'rgb(240,241,243)' : 'white')};
+  border-top: 1px solid rgb(238, 239, 241);
   @media (max-width: 769px) {
     padding: 5px;
     flex-direction: column;

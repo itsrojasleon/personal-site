@@ -224,10 +224,16 @@ pre[class*="language-"] {
   float: left; /* 1 */
   min-width: 100%; /* 2 */
 }
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
 main {
   width: 100%;
-  background-color: rgb(240,241,243);
+  /* background-color: rgb(240,241,243); */
+  flex: 1;
 }
 main > div {
   width: 80%;

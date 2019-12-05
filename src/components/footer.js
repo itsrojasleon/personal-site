@@ -2,9 +2,9 @@ import React from 'react';
 import { Wrapper, LeftSide, Name, Email, A } from '../styles/footer';
 import { FaGithub, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({ isWhite }) => {
   return (
-    <Wrapper>
+    <Wrapper isWhite={isWhite}>
       <LeftSide>
         <Name>Juan Luis Rojas León - 2019</Name>
         <>

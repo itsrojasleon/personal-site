@@ -2,14 +2,12 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 export const Container = styled.header`
-  background-color: white;
-  padding: 10px;
-  border-bottom: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(238, 239, 241);
   width: 100%;
 `;
 export const Nav = styled.nav`
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
