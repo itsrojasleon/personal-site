@@ -7,14 +7,13 @@ website: 'https://search-music.herokuapp.com'
 github: 'https://github.com/rojasleon/search-music'
 ---
 
-Search your favorite song by Spotify API (v2).
+- Search your favorite song by Spotify API (v2).
 
-<div align="center">
-  <img src="https://i.imgur.com/AEIC0FX.png" width="60%" alt="Search Music V2" />
-</div>
+![Search Music V2](https://i.imgur.com/AEIC0FX.png)
 
+#### Technologies
 
-- React with Hooks
-- Node
-- MongoDB
-- Redux
+- [x] React with Hooks
+- [x] Node
+- [x] MongoDB
+- [x] Redux

@@ -9,10 +9,7 @@ github: 'https://github.com/rojasleon/video-search-on-youtube'
 
 Search your favorite song by Spotify API (v1).
 
-<div align="center">
-  <img src="https://i.imgur.com/orU0T50.png" width="60%" alt="Search Videos" />
-</div>
-
+![Search Videos](https://i.imgur.com/orU0T50.png)
 
 - React with Hooks
 - Node

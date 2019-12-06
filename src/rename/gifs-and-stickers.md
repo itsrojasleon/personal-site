@@ -9,10 +9,7 @@ github: 'https://github.com/rojasleon/search-infinite-gifs'
 
 Search your favorite song by Spotify API (v1).
 
-<div align="center">
-  <img src="https://i.imgur.com/b7lglYS.png" width="60%" alt="Gifs and Stickers" />
-</div>
-
+![hey there](https://i.imgur.com/b7lglYS.png)
 
 - React with Hooks
 - Node

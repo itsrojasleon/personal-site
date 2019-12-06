@@ -9,9 +9,7 @@ github: 'https://github.com/rojasleon/emaily'
 
 Ace your next Javascript coding interview by mastering data structures and algorithms.
 
-<div align="center">
-  <img src="https://i.imgur.com/J4345gK.png" width="60%" alt="The coding interview bootcamp" />
-</div>
+![The coding interview bootcamp](https://i.imgur.com/J4345gK.png)
 
 - React with Hooks
 - Node

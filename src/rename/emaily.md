@@ -9,10 +9,7 @@ github: 'https://github.com/rojasleon/emaily'
 
 Search your favorite song by Spotify API (v1).
 
-<div align="center">
-  <img src="https://i.imgur.com/djOtu2N.png" width="60%" alt="Emaily" />
-</div>
-
+![Emaily](https://i.imgur.com/djOtu2N.png)
 
 - React with Hooks
 - Node
