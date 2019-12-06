@@ -4,7 +4,7 @@ import SEO from '../components/seo';
 import Juan from '../components/juan';
 
 const IndexPage = () => (
-  <Layout isWhite={true}>
+  <Layout isWhite>
     <SEO title="Home" />
     <Juan />
   </Layout>
