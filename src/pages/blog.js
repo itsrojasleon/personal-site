@@ -2,6 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Posts from '../components/posts';
 
 const Blog = () => {
   const data = useStaticQuery(graphql`
@@ -16,6 +17,7 @@ const Blog = () => {
               date
               path
               title
+              image
             }
           }
         }
@@ -27,17 +29,8 @@ const Blog = () => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <div>
-        {edges.map(e => {
-          const { frontmatter } = e.node;
-          return (
-            <div key={frontmatter.path}>
-              <Link to={frontmatter.path}>{frontmatter.title}</Link>
-            </div>
-          );
-        })}
-        <Link to="/tags">Search by tags</Link>
-      </div>
+      <Posts posts={edges} />
+      <Link to="/tags">Search by tags</Link>
     </Layout>
   );
 };
