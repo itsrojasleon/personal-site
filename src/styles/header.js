@@ -14,16 +14,17 @@ export const Nav = styled.nav`
 `;
 export const RightSide = styled.div``;
 export const A = styled(Link)`
-  color: rgb(60, 60, 60);
+  color: black;
   text-decoration: none;
   font-size: 18px;
-  font-weight: lighter;
-  margin-right: 20px;
+  font-weight: 300;
+  margin-right: 26px;
+  transition: 0.2s;
   &:nth-last-child(1) {
     margin-right: 0;
   }
   &:hover {
-    cursor: pointer;
+    opacity: 0.7;
   }
 `;
 export const Img = styled.img`

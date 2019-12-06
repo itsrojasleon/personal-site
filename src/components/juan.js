@@ -11,11 +11,13 @@ const Juan = () => {
   return (
     <Container>
       <div>
-        <p>Hi there</p>
-        <h1>My name's Juan Luis Rojas León.</h1>
+        <p>Hi there 👋</p>
       </div>
       <span>
-        <p>I'm a software developer.</p>
+        <p>
+          My name's <strong>Juan Luis Rojas León</strong> and I am a
+          <strong> Frontend Developer</strong>.
+        </p>
         <p>
           Please visit my
           <a href={urls[0]}> Github</a> /<a href={urls[1]}> Codewars</a> /
