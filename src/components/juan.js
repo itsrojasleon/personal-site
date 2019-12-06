@@ -12,7 +12,7 @@ const Juan = () => {
     <Container>
       <div>
         <p>
-          Hi there
+          Hi there{' '}
           <span role="img" aria-label="hi">
             👋
           </span>

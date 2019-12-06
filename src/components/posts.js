@@ -14,8 +14,10 @@ const Posts = ({ posts }) => {
 
         return (
           <Container key={path}>
-            <Img fluid={featuredImgFluid} />
-            <Link to={path}>{title}</Link>
+            <Link to={path}>
+              <Img fluid={featuredImgFluid} />
+              <h2>{title}</h2>
+            </Link>
           </Container>
         );
       })}

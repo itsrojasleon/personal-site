@@ -6,7 +6,9 @@ const Me = () => {
     <Container>
       <div>
         <p>
-          Hello again!{' '}
+          <span>
+            <strong>Hello again</strong>
+          </span>
           <span role="img" aria-label="hello">
             ✌️
           </span>
@@ -19,7 +21,7 @@ const Me = () => {
           I love using technologies like <strong>React</strong> (especially with
           Hooks), <strong> React Native</strong>,<strong> Redux</strong> and
           <strong> Node </strong> in my projects (Yes! I love the power of
-          <strong>Javascript</strong>); but I also have some experience with
+          <strong> Javascript</strong>); but I also have some experience with
           languages like
           <strong> Typescript</strong> and
           <strong> Python</strong>.

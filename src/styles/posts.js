@@ -5,4 +5,11 @@ export const Container = styled.div`
   background: white;
   margin: 10px;
   padding: 10px;
+  border-radius: 4px;
+  & > a {
+    color: black;
+  }
+  & > a > h2 {
+    margin-top: 15px;
+  }
 `;

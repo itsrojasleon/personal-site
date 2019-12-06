@@ -12,7 +12,7 @@ export const Container = styled.div`
   }
   & > div > p:first-child::after {
     content: '!';
-    color: rgb(231, 67, 125);
+    color: rgb(44, 148, 255);
   }
   & > span {
     font-size: 27px;
@@ -20,7 +20,7 @@ export const Container = styled.div`
   }
   & > span > p:first-child::before {
     content: '- ';
-    color: rgb(231, 67, 125);
+    color: rgb(44, 148, 255);
   }
   & > span > p:last-child,
   & > span > p:first-child {
@@ -28,11 +28,13 @@ export const Container = styled.div`
     font-weight: 300;
   }
   & > span > p > a {
-    color: rgb(231, 67, 125);
-    font-weight: bolder;
+    color: rgb(44, 148, 255);
+    font-style: italic;
+    font-weight: 600;
   }
   & > span > p > strong {
     font-weight: 500;
+    font-style: italic;
   }
   @media (max-width: 769px) {
     margin: 50px auto;
