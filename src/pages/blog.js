@@ -17,7 +17,13 @@ const Blog = () => {
               date
               path
               title
-              image
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }

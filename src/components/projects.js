@@ -17,10 +17,10 @@ const Projects = ({ projects }) => {
               <img src={image} alt={title} />
             </Link>
             <div>
-              <a target="_blank" href={github}>
+              <a target="_blank" rel="noopener noreferrer" href={github}>
                 <FaGithub />
               </a>
-              <a target="_blank" href={website}>
+              <a target="_blank" rel="noopener noreferrer" href={website}>
                 <FaGlobeAmericas />
               </a>
             </div>

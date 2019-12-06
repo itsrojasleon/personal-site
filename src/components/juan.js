@@ -11,7 +11,12 @@ const Juan = () => {
   return (
     <Container>
       <div>
-        <p>Hi there 👋</p>
+        <p>
+          Hi there
+          <span role="img" aria-label="hi">
+            👋
+          </span>
+        </p>
       </div>
       <span>
         <p>

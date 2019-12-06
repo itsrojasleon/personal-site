@@ -5,7 +5,12 @@ const Me = () => {
   return (
     <Container>
       <div>
-        <p>Hello again! ✌️</p>
+        <p>
+          Hello again!{' '}
+          <span role="img" aria-label="hello">
+            ✌️
+          </span>
+        </p>
         <p>
           When I was 15 years old I discovered this incredible world of
           programming, after that I knew what my life purpose was going to be.
