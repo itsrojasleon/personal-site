@@ -29,7 +29,7 @@ export const Name = styled.span`
   }
 `;
 export const Email = styled.a`
-  color: rgb(90, 91, 103);
+  color: rgb(100, 100, 100);
   &:hover {
     text-decoration: underline;
     color: black;
@@ -43,7 +43,7 @@ export const A = styled.a`
   font-size: 21px;
   margin-right: 20px;
   transition: 0.2s;
-  color: rgb(90, 91, 103);
+  color: rgb(100, 100, 100);
   &:nth-last-child(1) {
     margin-right: 0;
   }

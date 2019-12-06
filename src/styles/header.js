@@ -14,7 +14,7 @@ export const Nav = styled.nav`
 `;
 export const RightSide = styled.div``;
 export const A = styled(Link)`
-  color: black;
+  color: rgb(100, 100, 100);
   text-decoration: none;
   font-size: 18px;
   font-weight: 300;
