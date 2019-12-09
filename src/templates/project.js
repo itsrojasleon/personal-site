@@ -12,17 +12,16 @@ const Template = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <h1>{title}</h1>
       <div
         style={{
           backgroundColor: 'white',
           padding: '10px',
           borderRadius: '5px',
-
-          marginBottom: '10px',
-        }}
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+          margin: '15px',
+        }}>
+        <h1>{title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
     </Layout>
   );
 };

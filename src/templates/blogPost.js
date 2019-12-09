@@ -12,16 +12,23 @@ const Template = ({ data, pageContext }) => {
 
   const { next, prev } = pageContext;
   let featuredImgFluid = featuredImage.childImageSharp.fluid;
-  // console.log()
 
   return (
     <Layout>
       <SEO title={title} />
       {next && <Link to={next.frontmatter.path}>Next</Link>}
       {prev && <Link to={prev.frontmatter.path}>Prev</Link>}
-      <h1>{title}</h1>
-      <Img fluid={featuredImgFluid} />
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div
+        style={{
+          backgroundColor: 'white',
+          padding: '10px',
+          borderRadius: '5px',
+          margin: '15px',
+        }}>
+        <h1>{title}</h1>
+        <Img fluid={featuredImgFluid} />
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
     </Layout>
   );
 };

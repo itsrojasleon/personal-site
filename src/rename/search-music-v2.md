@@ -13,7 +13,18 @@ github: 'https://github.com/rojasleon/search-music'
 
 #### Technologies
 
-- [x] React with Hooks
+- [x] React
+  - [x] Redux
+  - [x] Hooks
+  - [x] Axios
+  - [x] Styled Components
 - [x] Node
+  - [x] Express
+  - [x] Passport
 - [x] MongoDB
-- [x] Redux
+  - [x] Mongoose
+
+#### Links
+
+- [Github](https://github.com/rojasleon/search-music "Github")
+- [Website](https://search-music.herokuapp.com "Search Music")
