@@ -27,7 +27,7 @@ const dogObject = {
 }
 ```
 
-### Accessing Object Properties
+## Accessing object properties
 
 **"VALID KEYS"**: All keys are converted to strings. *Except for `Symbols`*
 
@@ -70,3 +70,54 @@ const colors = {
 > colors[blue] // ❌ It doesn't exist any blue variable
 > colors["blue"] // ✅ === "#536DFE"
 ```
+
+## Adding and updating properties
+
+A value in a object can be created or updated by assignment. If the property name already exists in the object, the property value is replaced.
+
+```javascript
+const greetings = {};
+
+greetings["first"] = "Hello";
+greetings.second = "Hi";
+greetings.third = "What is bad" // Oooppsss!
+greetings.third = "What is good" // Better!
+
+console.log(greetings)
+> {first: "Hello", second: "Hi", third: "What is good"}
+
+/***************/
+
+const numbers = {};
+
+for (let i = 1; i <= 3; i++) {
+  numbers[`number${i}`] = i;
+}
+console.log(numbers)
+> {number1: 1, number2: 2, number3: 3}
+```
+
+## Objects and reference types
+
+Objects are passed around by reference. They are never copied.
+
+```javascript
+const palette = {
+  red: "#eb4d4b",
+  yellow: "#f9ca24",
+  blue: "#30336b"
+}
+
+const palette2 = palette;
+
+palette2.green = "#33691E";
+
+console.log(palette, palette2);
+> {red: "#eb4d4b", yellow: "#f9ca24", blue: "#30336b", green: "#33691E"}
+> {red: "#eb4d4b", yellow: "#f9ca24", blue: "#30336b", green: "#33691E"}
+
+console.log(palette === palette2)
+> true
+```
+
+The simple types of Javascript are numbers, strings, booleans (true and false), null, and undefined. All other values are objects. Numbers, strings and booleans are object-like in that they have methods, but they are immutable.
