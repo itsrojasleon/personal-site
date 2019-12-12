@@ -20,28 +20,40 @@ const Me = () => {
         <p>
           I love using technologies like
           <strong>
-            <a target="_blank" href="https://reactjs.org/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://reactjs.org/">
               {' '}
               React{' '}
             </a>
           </strong>
           (especially with Hooks),
           <strong>
-            <a target="_blank" href="https://facebook.github.io/react-native/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://facebook.github.io/react-native/">
               {' '}
               React Native
             </a>
           </strong>
           ,
           <strong>
-            <a target="_blank" href="https://redux.js.org/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://redux.js.org/">
               {' '}
               Redux{' '}
             </a>
           </strong>
           and
           <strong>
-            <a target="_blank" href="https://nodejs.org/en/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://nodejs.org/en/">
               {' '}
               Node{' '}
             </a>
@@ -52,13 +64,17 @@ const Me = () => {
           <strong>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.typescriptlang.org/docs/home.html">
               Typescript
             </a>
           </strong>{' '}
           and
           <strong>
-            <a target="_blank" href="https://www.python.org/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.python.org/">
               {' '}
               Python{' '}
             </a>
@@ -72,6 +88,7 @@ const Me = () => {
           <strong>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.busuu.com/dashboard#/profile/72980070/progress">
               Busuu
             </a>
@@ -80,6 +97,7 @@ const Me = () => {
           <strong>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.duolingo.com/profile/rojas_leon">
               {' '}
               Duolingo

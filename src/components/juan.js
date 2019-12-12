@@ -5,6 +5,7 @@ const Juan = () => {
   const urls = [
     'https://github.com/rojasleon',
     'https://codesandbox.io/u/rojasleon',
+    'https://glitch.com/@rojasleon',
     'https://www.codewars.com/users/rojasleon',
     'https://www.hackerrank.com/rojasleon?hr_r=1',
   ];
@@ -26,8 +27,9 @@ const Juan = () => {
         <p>
           Please visit my
           <a href={urls[0]}> Github</a> /<a href={urls[1]}> CodeSandbox</a> /
-          <a href={urls[2]}> Codewars</a> or
-          <a href={urls[3]}> Hackerrank</a> to see what I'm doing right now.
+          <a href={urls[2]}> Glitch</a> / <a href={urls[3]}> Codewars </a>
+          or
+          <a href={urls[4]}> Hackerrank</a> to see what I'm doing right now.
         </p>
       </span>
     </Container>
