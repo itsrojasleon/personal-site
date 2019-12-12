@@ -27,6 +27,7 @@ Send emails to people of your interest.
 - [x] MongoDB
   - [x] Mongoose
   - [x] MLab.com
+- [x] Heroku
 
 #### Links
 

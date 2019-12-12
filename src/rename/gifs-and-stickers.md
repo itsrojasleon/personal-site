@@ -7,11 +7,19 @@ website: 'https://search-infinite-gifs.surge.sh/'
 github: 'https://github.com/rojasleon/search-infinite-gifs'
 ---
 
-Search your favorite song by Spotify API (v1).
+Search your favorite gifs and stickers, have some fun.
 
 ![hey there](https://i.imgur.com/b7lglYS.png)
 
-- React with Hooks
-- Node
-- MongoDB
-- Redux
+#### Technologies
+
+- [x] React
+- [x] Redux
+- [x] Styled Components
+- [x] React Router Dom
+- [x] Surge.sh
+
+#### Links
+
+- [Github](https://github.com/rojasleon/search-infinite-gifs "Github")
+- [Website](https://search-infinite-gifs.surge.sh "Gifs and Stickers")

@@ -23,6 +23,7 @@ github: 'https://github.com/rojasleon/search-music'
   - [x] Passport
 - [x] MongoDB
   - [x] Mongoose
+- [x] Heroku
 
 #### Links
 
