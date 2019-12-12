@@ -14,7 +14,8 @@ export const Container = styled.div`
     font-weight: 300;
     line-height: 40px;
   }
-  & > div p > strong {
+  & > div p > strong,
+  & > div p > strong > a {
     font-weight: 500;
     color: rgb(44, 148, 255);
     font-style: italic;

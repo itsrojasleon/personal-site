@@ -18,18 +18,74 @@ const Me = () => {
           programming, after that I knew what my life purpose was going to be.
         </p>
         <p>
-          I love using technologies like <strong>React</strong> (especially with
-          Hooks), <strong> React Native</strong>,<strong> Redux</strong> and
-          <strong> Node </strong> in my projects (Yes! I love the power of
+          I love using technologies like
+          <strong>
+            <a target="_blank" href="https://reactjs.org/">
+              {' '}
+              React{' '}
+            </a>
+          </strong>
+          (especially with Hooks),
+          <strong>
+            <a target="_blank" href="https://facebook.github.io/react-native/">
+              {' '}
+              React Native
+            </a>
+          </strong>
+          ,
+          <strong>
+            <a target="_blank" href="https://redux.js.org/">
+              {' '}
+              Redux{' '}
+            </a>
+          </strong>
+          and
+          <strong>
+            <a target="_blank" href="https://nodejs.org/en/">
+              {' '}
+              Node{' '}
+            </a>
+          </strong>
+          in my projects (Yes! I love the power of
           <strong> Javascript</strong>); but I also have some experience with
           languages like
-          <strong> Typescript</strong> and
-          <strong> Python</strong>.
+          <strong>
+            <a
+              target="_blank"
+              href="https://www.typescriptlang.org/docs/home.html">
+              Typescript
+            </a>
+          </strong>{' '}
+          and
+          <strong>
+            <a target="_blank" href="https://www.python.org/">
+              {' '}
+              Python{' '}
+            </a>
+          </strong>
+          .
         </p>
         <p>
-          One of my favorites hobbies is to study new languages (English and
-          French "at the moment"), you can see my level in two platforms: Busuu
-          and Duolingo.
+          One of my favorites hobbies is to study new languages (
+          <strong>English</strong> and <strong>French</strong> "at the moment"),
+          you can see my level in two platforms:{' '}
+          <strong>
+            <a
+              target="_blank"
+              href="https://www.busuu.com/dashboard#/profile/72980070/progress">
+              Busuu
+            </a>
+          </strong>{' '}
+          and
+          <strong>
+            <a
+              target="_blank"
+              href="https://www.duolingo.com/profile/rojas_leon">
+              {' '}
+              Duolingo
+            </a>
+          </strong>
+          .
         </p>
       </div>
     </Container>
