@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `rename`,
-        path: `${__dirname}/src/rename/`,
+        name: `projects`,
+        path: `${__dirname}/src/projects/`,
       },
     },
     {

@@ -5,12 +5,11 @@ date: 2019-11-09
 image: "https://i.imgur.com/orU0T50.png"
 website: 'https://search-video.surge.sh'
 github: 'https://github.com/rojasleon/video-search-on-youtube'
+featuredImage: "./orU0T50.png"
 ---
 
 Search Your favorite videos by the Youtube API.
 This a little Youtube clone.
-
-![Search Videos](https://i.imgur.com/orU0T50.png)
 
 #### Technologies
 

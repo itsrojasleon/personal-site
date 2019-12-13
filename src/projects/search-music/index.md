@@ -5,11 +5,10 @@ date: 2019-11-09
 image: "https://i.imgur.com/RTtpQWK.png"
 website: 'https://rojasleon.github.io/search-music'
 github: 'https://github.com/rojasleon/search-music/tree/gh-pages'
+featuredImage: "./RTtpQWK.png"
 ---
 
 Search your favorite song by Spotify API (v1).
-
-![Search Music](https://i.imgur.com/RTtpQWK.png)
 
 #### Technologies
 

@@ -1,13 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 
 const Template = ({ data, pageContext }) => {
   const {
     html,
-    frontmatter: { title },
+    frontmatter: { title, featuredImage },
   } = data.markdownRemark;
+  let featuredImgFluid = featuredImage.childImageSharp.fluid;
 
   return (
     <Layout>
@@ -20,6 +22,7 @@ const Template = ({ data, pageContext }) => {
           margin: '15px',
         }}>
         <h1>{title}</h1>
+        <Img fluid={featuredImgFluid} />
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
@@ -32,6 +35,13 @@ export const query = graphql`
       html
       frontmatter {
         title
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

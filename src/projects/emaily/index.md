@@ -5,11 +5,12 @@ date: 2019-11-09
 image: "https://i.imgur.com/djOtu2N.png"
 website: 'https://server-with-node.herokuapp.com'
 github: 'https://github.com/rojasleon/emaily'
+featuredImage: "./djOtu2N.png"
 ---
 
 Send emails to people of your interest.
 
-![Emaily](https://i.imgur.com/djOtu2N.png)
+<!-- ![Emaily](https://i.imgur.com/djOtu2N.png) -->
 
 #### Technologies
 

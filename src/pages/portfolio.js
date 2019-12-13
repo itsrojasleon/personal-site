@@ -20,6 +20,13 @@ const Portfolio = () => {
               image
               website
               github
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
