@@ -4,6 +4,7 @@ path: /blog/objects
 date: 2016-12-02
 featuredImage: "./picture.jpeg"
 tags: ["objects"]
+author: "rojasleon"
 ---
 
 An **object** is a container of properties where a property has a name and a value. A property name can be any `string`, including the `empty string`. A property value can be any javascript value except for `undefined`; arrays are objects, functions are objects, regular expressions are objects, and, of course, objects are objects.

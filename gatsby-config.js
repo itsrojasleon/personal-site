@@ -155,14 +155,7 @@ module.exports = {
               return allMarkdownRemark.edges.map(edge => {
                 const {
                   node: {
-                    frontmatter: {
-                      title,
-                      date,
-                      path,
-                      author: { name, email },
-                      featured: { publicURL },
-                      featuredAlt,
-                    },
+                    frontmatter: { title, date, path, author },
                     excerpt,
                     html,
                   },
@@ -174,12 +167,7 @@ module.exports = {
                   date,
                   url: siteUrl + path,
                   guid: siteUrl + path,
-                  author: `${email} ( ${name} )`,
-                  image: {
-                    url: siteUrl + publicURL,
-                    title: featuredAlt,
-                    link: siteUrl + path,
-                  },
+                  author: author,
                   custom_elements: [{ 'content:encoded': html }],
                 });
               });
@@ -198,14 +186,7 @@ module.exports = {
                     path
                     date
                     title
-                    featured {
-                      publicURL
-                    }
-                    featuredAlt
-                    author {
-                      name
-                      email
-                    }
+                    author
                   }
                 }
               }

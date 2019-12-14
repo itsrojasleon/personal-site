@@ -6,6 +6,7 @@ image: "https://i.imgur.com/djOtu2N.png"
 website: 'https://server-with-node.herokuapp.com'
 github: 'https://github.com/rojasleon/emaily'
 featuredImage: "./djOtu2N.png"
+author: "rojasleon"
 ---
 
 Send emails to people of your interest.

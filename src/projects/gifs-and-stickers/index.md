@@ -6,6 +6,7 @@ image: "https://i.imgur.com/b7lglYS.png"
 website: 'https://search-infinite-gifs.surge.sh/'
 github: 'https://github.com/rojasleon/search-infinite-gifs'
 featuredImage: "./b7lglYS.png"
+author: "rojasleon"
 ---
 
 Search your favorite gifs and stickers, have some fun.
