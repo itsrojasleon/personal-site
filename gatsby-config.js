@@ -1,8 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Juan Luis Rojas León`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `rojasleon`,
+    titleTemplate: `rojasleon`,
+    description: `This is such a beautiful world. I love what I do`,
     author: `@rojasleon`,
+    keywords: [
+      `Software Engineer`,
+      `Software Developer`,
+      `React Hooks`,
+      `Node`,
+      `React`,
+      `Javascript`,
+    ],
+    twitterUsername: `@rojas_leon_`,
+    siteUrl: 'https://rojasleon.tech/',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

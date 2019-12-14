@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const SingleTagIndex = ({ data, pageContext }) => {
   const { posts, tagName } = pageContext;
 
   return (
     <Layout>
+      <SEO title="Tag" />
       <div>
         Posts about <strong>{`${tagName}`}</strong>
       </div>
