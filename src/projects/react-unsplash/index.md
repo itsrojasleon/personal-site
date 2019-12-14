@@ -4,7 +4,7 @@ path: "/portfolio/react-unsplash"
 date: 2019-12-13
 website: "https://react-unsplash-api.netlify.com"
 github: "https://github.com/rojasleon/unsplash-app"
-featuredImage: "./gEKA2gy.png"
+featuredImage: "./pbZWGLD.png"
 ---
 
 Search using the most powerful free image search API in the world.
