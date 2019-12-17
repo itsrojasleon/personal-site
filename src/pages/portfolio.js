@@ -22,7 +22,7 @@ const Portfolio = () => {
               github
               featuredImage {
                 childImageSharp {
-                  fluid(maxWidth: 800) {
+                  fluid {
                     ...GatsbyImageSharpFluid
                   }
                 }

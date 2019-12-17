@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap');
+
 pre[class*="language-"] {
 	text-align: left;
 	white-space: pre;
@@ -211,8 +213,8 @@ pre[class*="language-"] {
   margin: 0;
   padding: 0;
   overflow: initial;
-  float: left; /* 1 */
-  min-width: 100%; /* 2 */
+  float: left;
+  min-width: 100%;
 }
 .container {
   display: flex;
@@ -222,11 +224,10 @@ pre[class*="language-"] {
 
 main {
   width: 100%;
-  /* background-color: rgb(240,241,243); */
   flex: 1;
 }
 main > div {
-  width: 80%;
+  width: 75%;
   margin: auto;
 }
 
@@ -856,5 +857,10 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  } 
+}
+@media(max-width: 769px) {
+  main > div {
+    width: 95%;
   }
 }

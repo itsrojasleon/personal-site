@@ -2,7 +2,7 @@
 title: Objects
 path: /blog/objects
 date: 2016-12-02
-featuredImage: "./picture.jpeg"
+featuredImage: "./picture.jpg"
 tags: ["objects"]
 author: "rojasleon"
 ---

@@ -19,7 +19,7 @@ const Blog = () => {
               title
               featuredImage {
                 childImageSharp {
-                  fluid(maxWidth: 800) {
+                  fluid {
                     ...GatsbyImageSharpFluid
                   }
                 }
