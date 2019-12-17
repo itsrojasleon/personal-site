@@ -5,6 +5,15 @@ module.exports = {
     description: `This is such a beautiful world. I love what I do`,
     author: `@rojasleon`,
     keywords: [
+      `Rojas`,
+      `Juan Luis Rojas León`,
+      `Juan Luis`,
+      `Rojas León`,
+      `rojasleon`,
+      `juanluisrojasleon`,
+      `juanluisrojasleón`,
+      `JuanLuisRojasLeón`,
+      `JuanLuisRojasLeon`,
       `Software Engineer`,
       `Software Developer`,
       `React Hooks`,
@@ -12,8 +21,13 @@ module.exports = {
       `React`,
       `Javascript`,
     ],
-    twitterUsername: `@rojas_leon_`,
-    siteUrl: 'https://rojasleon.tech/',
+    socialLinks: {
+      twitter: `https://twitter.com/rojas_leon_`,
+      linkedin: `https://www.linkedin.com/in/rojasleon`,
+      github: `https://github.com/rojasleon`,
+      email: `rojasleon.dev@gmail.com`,
+    },
+    siteUrl: 'https://rojasleon.tech',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -43,6 +57,18 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/`,
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-154628275-1',
+        head: false,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
       },
     },
     {
@@ -92,13 +118,91 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Juan Luis Rojas León`,
+        short_name: `rojasleon`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        // graphQL query to get siteMetadata
+        query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              siteUrl
+              site_url: siteUrl,
+              author
+            }
+          }
+        }
+      
+`,
+        feeds: [
+          // an array of feeds, I just have one below
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              const {
+                siteMetadata: { siteUrl },
+              } = site;
+              return allMarkdownRemark.edges.map(edge => {
+                const {
+                  node: {
+                    frontmatter: { title, date, path, author },
+                    excerpt,
+                    html,
+                  },
+                } = edge;
+                return Object.assign({}, edge.node.frontmatter, {
+                  language: `en-us`,
+                  title,
+                  description: excerpt,
+                  date,
+                  url: siteUrl + path,
+                  guid: siteUrl + path,
+                  author: author,
+                  image: {
+                    url: siteUrl + publicURL,
+                    title: featuredAlt,
+                    link: siteUrl + path,
+                  },
+                  custom_elements: [{ 'content:encoded': html }],
+                });
+              });
+            },
+            // query to get blog post data
+            query: `
+          {
+            allMarkdownRemark(
+              sort: { order: DESC, fields: [frontmatter___date] },
+            ) {
+              edges {
+                node {
+                  excerpt
+                  html
+                  frontmatter {
+                    path
+                    date
+                    title
+                    author
+                  }
+                }
+              }
+            }
+          }
+          
+`,
+            output: '/rss.xml',
+            title: `rojasleon | Juan Luis Rojas León`,
+          },
+        ],
       },
     },
   ],
