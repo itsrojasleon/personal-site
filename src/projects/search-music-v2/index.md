@@ -6,6 +6,7 @@ image: "https://i.imgur.com/AEIC0FX.png"
 website: "https://search-music.herokuapp.com"
 github: "https://github.com/rojasleon/search-music"
 featuredImage: "./AEIC0FX.png"
+author: "rojasleon"
 ---
 
 - Search your favorite song by Spotify API (v2).

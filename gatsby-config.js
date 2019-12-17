@@ -168,11 +168,6 @@ module.exports = {
                   url: siteUrl + path,
                   guid: siteUrl + path,
                   author: author,
-                  image: {
-                    url: siteUrl + publicURL,
-                    title: featuredAlt,
-                    link: siteUrl + path,
-                  },
                   custom_elements: [{ 'content:encoded': html }],
                 });
               });

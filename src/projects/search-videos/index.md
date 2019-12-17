@@ -6,6 +6,7 @@ image: "https://i.imgur.com/orU0T50.png"
 website: 'https://search-video.surge.sh'
 github: 'https://github.com/rojasleon/video-search-on-youtube'
 featuredImage: "./orU0T50.png"
+author: "rojasleon"
 ---
 
 Search Your favorite videos by the Youtube API.

@@ -6,6 +6,7 @@ image: "https://i.imgur.com/RTtpQWK.png"
 website: 'https://rojasleon.github.io/search-music'
 github: 'https://github.com/rojasleon/search-music/tree/gh-pages'
 featuredImage: "./RTtpQWK.png"
+author: "rojasleon"
 ---
 
 Search your favorite song by Spotify API (v1).
