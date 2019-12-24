@@ -16,7 +16,6 @@ const Template = ({ data, pageContext }) => {
       <SEO title={title} />
       <div
         style={{
-          backgroundColor: 'white',
           padding: '10px',
           borderRadius: '5px',
           margin: '15px',

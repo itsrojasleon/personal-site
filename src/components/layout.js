@@ -18,13 +18,10 @@ const Layout = ({ children, isWhite }) => {
   return (
     <div className="container">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main
-        style={{
-          backgroundColor: isWhite ? 'white' : 'rgb(240,241,243)',
-        }}>
+      <main>
         <div>{children}</div>
       </main>
-      <Footer isWhite={isWhite} />
+      <Footer />
     </div>
   );
 };

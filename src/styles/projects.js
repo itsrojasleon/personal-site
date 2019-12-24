@@ -7,13 +7,13 @@ export const Container = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   column-gap: 18px;
   row-gap: 18px;
-  & > div {
-    background-color: white;
+  & > article {
+    /* background-color: white; */
     border-radius: 4px;
     padding: 10px;
   }
   & > div a {
-    color: black;
+    /* color: black; */
   }
   & > div a > h4 {
     padding: 0;
@@ -22,7 +22,8 @@ export const Container = styled.div`
   & > div > a > img {
     border-radius: 5px;
   }
-  & > div > div {
+  & > article > div {
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;

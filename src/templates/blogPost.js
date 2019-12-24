@@ -20,7 +20,6 @@ const Template = ({ data, pageContext }) => {
       {prev && <Link to={prev.frontmatter.path}>Prev</Link>}
       <div
         style={{
-          backgroundColor: 'white',
           padding: '10px',
           borderRadius: '5px',
           margin: '15px',

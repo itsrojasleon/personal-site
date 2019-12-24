@@ -14,7 +14,7 @@ const Projects = ({ projects }) => {
         let featuredImgFluid = featuredImage.childImageSharp.fluid;
 
         return (
-          <div key={path}>
+          <article key={path}>
             <Link to={path}>
               <h4>{title}</h4>
               <Img fluid={featuredImgFluid} />
@@ -27,7 +27,7 @@ const Projects = ({ projects }) => {
                 <FaGlobeAmericas />
               </a>
             </div>
-          </div>
+          </article>
         );
       })}
     </Container>

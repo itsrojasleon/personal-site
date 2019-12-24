@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 export const Container = styled.header`
-  border-bottom: 1px solid rgb(238, 239, 241);
   width: 100%;
 `;
 export const Nav = styled.nav`
@@ -14,7 +13,6 @@ export const Nav = styled.nav`
 `;
 export const RightSide = styled.div``;
 export const A = styled(Link)`
-  color: rgb(100, 100, 100);
   text-decoration: none;
   font-size: 18px;
   font-weight: 300;
