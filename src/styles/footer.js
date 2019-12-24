@@ -31,7 +31,8 @@ export const Email = styled.a`
     text-decoration: underline;
   }
   @media (max-width: 769px) {
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 `;
 

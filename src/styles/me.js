@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin: 100px auto;
+  font-size: 27px;
   & > div > p > span strong {
     font-weight: 500;
   }
@@ -10,7 +11,6 @@ export const Container = styled.div`
     color: rgb(44, 148, 255);
   }
   & > div {
-    font-size: 27px;
     font-weight: 300;
     line-height: 40px;
   }
@@ -22,5 +22,6 @@ export const Container = styled.div`
   }
   @media (max-width: 769px) {
     margin: 50px auto;
+    font-size: 20px;
   }
 `;

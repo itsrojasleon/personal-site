@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin: 100px auto;
+  font-size: 27px;
   & > div > * {
     font-size: 40px;
     font-weight: 600;
@@ -15,7 +16,6 @@ export const Container = styled.div`
     color: rgb(44, 148, 255);
   }
   & > span {
-    font-size: 27px;
     font-weight: 300;
   }
   & > span > p:first-child::before {
@@ -38,5 +38,6 @@ export const Container = styled.div`
   }
   @media (max-width: 769px) {
     margin: 50px auto;
+    font-size: 22px;
   }
 `;
