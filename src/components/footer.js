@@ -6,7 +6,7 @@ const Footer = ({ isWhite }) => {
   return (
     <Wrapper isWhite={isWhite}>
       <LeftSide>
-        <Name>Juan Luis Rojas León - 2019</Name>
+        <Name>Juan Luis Rojas León - 2020</Name>
         <>
           <Email href="mailto:rojasleon.dev@gmail.com">
             rojasleon.dev@gmail.com
